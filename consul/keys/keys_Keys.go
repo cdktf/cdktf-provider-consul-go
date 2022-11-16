@@ -2,10 +2,10 @@ package keys
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/keys/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v2/keys/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -594,6 +594,44 @@ func Keys_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-consul.keys.Keys",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Keys_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateKeys_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.keys.Keys",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Keys_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateKeys_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.keys.Keys",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

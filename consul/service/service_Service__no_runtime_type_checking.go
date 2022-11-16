@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package service
 
@@ -58,6 +57,14 @@ func (s *jsiiProxy_Service) validatePutCheckParameters(value interface{}) error 
 }
 
 func validateService_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateService_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

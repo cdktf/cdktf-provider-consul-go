@@ -2,10 +2,10 @@ package dataconsulnetworkareamembers
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v2/dataconsulnetworkareamembers/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -484,6 +484,44 @@ func DataConsulNetworkAreaMembers_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataConsulNetworkAreaMembers_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataConsulNetworkAreaMembers_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataConsulNetworkAreaMembers_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataConsulNetworkAreaMembers_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package agentservice
 
@@ -54,6 +53,14 @@ func (a *jsiiProxy_AgentService) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func validateAgentService_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateAgentService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAgentService_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

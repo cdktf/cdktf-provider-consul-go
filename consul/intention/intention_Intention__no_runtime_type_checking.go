@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package intention
 
@@ -54,6 +53,14 @@ func (i *jsiiProxy_Intention) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func validateIntention_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateIntention_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIntention_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

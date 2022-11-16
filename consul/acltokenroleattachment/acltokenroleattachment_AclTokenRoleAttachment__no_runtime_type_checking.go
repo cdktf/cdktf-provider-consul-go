@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package acltokenroleattachment
 
@@ -54,6 +53,14 @@ func (a *jsiiProxy_AclTokenRoleAttachment) validateOverrideLogicalIdParameters(n
 }
 
 func validateAclTokenRoleAttachment_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateAclTokenRoleAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAclTokenRoleAttachment_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

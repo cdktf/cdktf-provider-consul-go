@@ -2,10 +2,10 @@ package dataconsulcatalogservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulcatalogservice/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v2/dataconsulcatalogservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -543,6 +543,44 @@ func DataConsulCatalogService_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataConsulCatalogService_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataConsulCatalogService_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataConsulCatalogService_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataConsulCatalogService_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

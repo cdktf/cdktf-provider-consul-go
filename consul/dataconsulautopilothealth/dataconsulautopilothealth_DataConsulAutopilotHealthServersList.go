@@ -2,9 +2,9 @@ package dataconsulautopilothealth
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v2/jsii"
 
-	"github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v2/dataconsulautopilothealth/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

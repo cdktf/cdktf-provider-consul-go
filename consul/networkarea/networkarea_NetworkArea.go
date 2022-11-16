@@ -2,10 +2,10 @@ package networkarea
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/networkarea/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v2/networkarea/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -593,6 +593,44 @@ func NetworkArea_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-consul.networkArea.NetworkArea",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func NetworkArea_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateNetworkArea_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.networkArea.NetworkArea",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func NetworkArea_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateNetworkArea_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.networkArea.NetworkArea",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

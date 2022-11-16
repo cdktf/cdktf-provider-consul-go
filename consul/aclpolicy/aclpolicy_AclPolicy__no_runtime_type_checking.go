@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package aclpolicy
 
@@ -54,6 +53,14 @@ func (a *jsiiProxy_AclPolicy) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func validateAclPolicy_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateAclPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAclPolicy_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

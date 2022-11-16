@@ -2,10 +2,10 @@ package namespacepolicyattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/namespacepolicyattachment/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v2/namespacepolicyattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -487,6 +487,44 @@ func NamespacePolicyAttachment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-consul.namespacePolicyAttachment.NamespacePolicyAttachment",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func NamespacePolicyAttachment_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateNamespacePolicyAttachment_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.namespacePolicyAttachment.NamespacePolicyAttachment",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func NamespacePolicyAttachment_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateNamespacePolicyAttachment_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.namespacePolicyAttachment.NamespacePolicyAttachment",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

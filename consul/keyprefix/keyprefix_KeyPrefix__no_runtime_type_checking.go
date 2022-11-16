@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package keyprefix
 
@@ -58,6 +57,14 @@ func (k *jsiiProxy_KeyPrefix) validatePutSubkeyParameters(value interface{}) err
 }
 
 func validateKeyPrefix_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateKeyPrefix_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKeyPrefix_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

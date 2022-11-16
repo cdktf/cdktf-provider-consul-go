@@ -2,10 +2,10 @@ package keyprefix
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/keyprefix/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v2/keyprefix/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -652,6 +652,44 @@ func KeyPrefix_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-consul.keyPrefix.KeyPrefix",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func KeyPrefix_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateKeyPrefix_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.keyPrefix.KeyPrefix",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func KeyPrefix_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateKeyPrefix_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.keyPrefix.KeyPrefix",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

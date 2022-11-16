@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package aclrole
 
@@ -62,6 +61,14 @@ func (a *jsiiProxy_AclRole) validatePutServiceIdentitiesParameters(value interfa
 }
 
 func validateAclRole_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateAclRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAclRole_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

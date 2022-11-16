@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package preparedquery
 
@@ -66,6 +65,14 @@ func (p *jsiiProxy_PreparedQuery) validatePutTemplateParameters(value *PreparedQ
 }
 
 func validatePreparedQuery_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validatePreparedQuery_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePreparedQuery_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

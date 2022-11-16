@@ -2,10 +2,10 @@ package autopilotconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/autopilotconfig/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v2/autopilotconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -699,6 +699,44 @@ func AutopilotConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-consul.autopilotConfig.AutopilotConfig",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AutopilotConfig_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAutopilotConfig_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.autopilotConfig.AutopilotConfig",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AutopilotConfig_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAutopilotConfig_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.autopilotConfig.AutopilotConfig",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

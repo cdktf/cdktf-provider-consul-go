@@ -2,10 +2,10 @@ package namespaceroleattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/namespaceroleattachment/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v2/namespaceroleattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -487,6 +487,44 @@ func NamespaceRoleAttachment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func NamespaceRoleAttachment_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateNamespaceRoleAttachment_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func NamespaceRoleAttachment_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateNamespaceRoleAttachment_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

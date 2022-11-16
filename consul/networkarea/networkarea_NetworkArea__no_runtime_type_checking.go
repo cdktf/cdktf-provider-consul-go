@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package networkarea
 
@@ -54,6 +53,14 @@ func (n *jsiiProxy_NetworkArea) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func validateNetworkArea_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkArea_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkArea_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

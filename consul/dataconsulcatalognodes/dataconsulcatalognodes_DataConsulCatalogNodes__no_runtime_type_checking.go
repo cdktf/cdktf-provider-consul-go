@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dataconsulcatalognodes
 
@@ -58,6 +57,14 @@ func (d *jsiiProxy_DataConsulCatalogNodes) validatePutQueryOptionsParameters(val
 }
 
 func validateDataConsulCatalogNodes_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataConsulCatalogNodes_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataConsulCatalogNodes_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

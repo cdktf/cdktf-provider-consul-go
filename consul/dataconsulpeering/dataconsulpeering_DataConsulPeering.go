@@ -2,10 +2,10 @@ package dataconsulpeering
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeering/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v2/dataconsulpeering/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -537,6 +537,44 @@ func DataConsulPeering_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-consul.dataConsulPeering.DataConsulPeering",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataConsulPeering_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataConsulPeering_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.dataConsulPeering.DataConsulPeering",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataConsulPeering_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataConsulPeering_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.dataConsulPeering.DataConsulPeering",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

@@ -2,10 +2,10 @@ package preparedquery
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/preparedquery/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v2/preparedquery/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -944,6 +944,44 @@ func PreparedQuery_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-consul.preparedQuery.PreparedQuery",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PreparedQuery_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePreparedQuery_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.preparedQuery.PreparedQuery",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PreparedQuery_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePreparedQuery_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.preparedQuery.PreparedQuery",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

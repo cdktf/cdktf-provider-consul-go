@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dataconsulnetworksegments
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataConsulNetworkSegments) validateOverrideLogicalIdParameter
 }
 
 func validateDataConsulNetworkSegments_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataConsulNetworkSegments_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataConsulNetworkSegments_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

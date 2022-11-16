@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package autopilotconfig
 
@@ -54,6 +53,14 @@ func (a *jsiiProxy_AutopilotConfig) validateOverrideLogicalIdParameters(newLogic
 }
 
 func validateAutopilotConfig_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutopilotConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutopilotConfig_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

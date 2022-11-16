@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package aclbindingrule
 
@@ -54,6 +53,14 @@ func (a *jsiiProxy_AclBindingRule) validateOverrideLogicalIdParameters(newLogica
 }
 
 func validateAclBindingRule_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateAclBindingRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAclBindingRule_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package catalogentry
 
@@ -58,6 +57,14 @@ func (c *jsiiProxy_CatalogEntry) validatePutServiceParameters(value interface{})
 }
 
 func validateCatalogEntry_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateCatalogEntry_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCatalogEntry_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

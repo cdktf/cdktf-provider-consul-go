@@ -2,10 +2,10 @@ package aclauthmethod
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v2/aclauthmethod/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -791,6 +791,44 @@ func AclAuthMethod_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-consul.aclAuthMethod.AclAuthMethod",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AclAuthMethod_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAclAuthMethod_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.aclAuthMethod.AclAuthMethod",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AclAuthMethod_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAclAuthMethod_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.aclAuthMethod.AclAuthMethod",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dataconsulacltoken
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataConsulAclToken) validateOverrideLogicalIdParameters(newLo
 }
 
 func validateDataConsulAclToken_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataConsulAclToken_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataConsulAclToken_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

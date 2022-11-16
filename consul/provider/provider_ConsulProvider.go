@@ -2,10 +2,10 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/provider/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v2/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -731,6 +731,44 @@ func ConsulProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-consul.provider.ConsulProvider",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ConsulProvider_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateConsulProvider_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.provider.ConsulProvider",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ConsulProvider_IsTerraformProvider(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateConsulProvider_IsTerraformProviderParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.provider.ConsulProvider",
+		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
 	)

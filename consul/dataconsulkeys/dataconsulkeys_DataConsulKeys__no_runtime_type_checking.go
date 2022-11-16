@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dataconsulkeys
 
@@ -58,6 +57,14 @@ func (d *jsiiProxy_DataConsulKeys) validatePutKeyParameters(value interface{}) e
 }
 
 func validateDataConsulKeys_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataConsulKeys_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataConsulKeys_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

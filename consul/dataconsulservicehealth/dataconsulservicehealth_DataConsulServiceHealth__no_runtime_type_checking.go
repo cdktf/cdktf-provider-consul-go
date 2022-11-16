@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dataconsulservicehealth
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataConsulServiceHealth) validateOverrideLogicalIdParameters(
 }
 
 func validateDataConsulServiceHealth_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataConsulServiceHealth_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataConsulServiceHealth_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
