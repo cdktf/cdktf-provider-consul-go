@@ -1,26 +1,26 @@
-package dataconsulpeering
+package dataconsulconfigentry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v2/dataconsulpeering/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v2/dataconsulconfigentry/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/consul/d/peering consul_peering}.
-type DataConsulPeering interface {
+// Represents a {@link https://www.terraform.io/docs/providers/consul/d/config_entry consul_config_entry}.
+type DataConsulConfigEntry interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConfigJson() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
-	DeletedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -36,30 +36,30 @@ type DataConsulPeering interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Kind() *string
+	SetKind(val *string)
+	KindInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Meta() cdktf.StringMap
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	Namespace() *string
+	SetNamespace(val *string)
+	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Partition() *string
 	SetPartition(val *string)
 	PartitionInput() *string
-	PeerCaPems() *[]*string
-	PeerId() *string
-	PeerName() *string
-	SetPeerName(val *string)
-	PeerNameInput() *string
-	PeerServerAddresses() *[]*string
-	PeerServerName() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -92,6 +92,7 @@ type DataConsulPeering interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -106,12 +107,12 @@ type DataConsulPeering interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for DataConsulPeering
-type jsiiProxy_DataConsulPeering struct {
+// The jsii proxy struct for DataConsulConfigEntry
+type jsiiProxy_DataConsulConfigEntry struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_DataConsulPeering) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_DataConsulConfigEntry) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -121,7 +122,17 @@ func (j *jsiiProxy_DataConsulPeering) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_DataConsulConfigEntry) ConfigJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataConsulConfigEntry) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -131,7 +142,7 @@ func (j *jsiiProxy_DataConsulPeering) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) Count() *float64 {
+func (j *jsiiProxy_DataConsulConfigEntry) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -141,17 +152,7 @@ func (j *jsiiProxy_DataConsulPeering) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) DeletedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"deletedAt",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataConsulPeering) DependsOn() *[]*string {
+func (j *jsiiProxy_DataConsulConfigEntry) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -161,7 +162,7 @@ func (j *jsiiProxy_DataConsulPeering) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_DataConsulConfigEntry) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -171,7 +172,7 @@ func (j *jsiiProxy_DataConsulPeering) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) Fqn() *string {
+func (j *jsiiProxy_DataConsulConfigEntry) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -181,7 +182,7 @@ func (j *jsiiProxy_DataConsulPeering) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) FriendlyUniqueId() *string {
+func (j *jsiiProxy_DataConsulConfigEntry) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -191,7 +192,7 @@ func (j *jsiiProxy_DataConsulPeering) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) Id() *string {
+func (j *jsiiProxy_DataConsulConfigEntry) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -201,7 +202,7 @@ func (j *jsiiProxy_DataConsulPeering) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) IdInput() *string {
+func (j *jsiiProxy_DataConsulConfigEntry) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -211,7 +212,27 @@ func (j *jsiiProxy_DataConsulPeering) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_DataConsulConfigEntry) Kind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataConsulConfigEntry) KindInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kindInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataConsulConfigEntry) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -221,17 +242,47 @@ func (j *jsiiProxy_DataConsulPeering) Lifecycle() *cdktf.TerraformResourceLifecy
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) Meta() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataConsulConfigEntry) Name() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"meta",
+		"name",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) Node() constructs.Node {
+func (j *jsiiProxy_DataConsulConfigEntry) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataConsulConfigEntry) Namespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataConsulConfigEntry) NamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataConsulConfigEntry) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -241,7 +292,7 @@ func (j *jsiiProxy_DataConsulPeering) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) Partition() *string {
+func (j *jsiiProxy_DataConsulConfigEntry) Partition() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -251,7 +302,7 @@ func (j *jsiiProxy_DataConsulPeering) Partition() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) PartitionInput() *string {
+func (j *jsiiProxy_DataConsulConfigEntry) PartitionInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -261,67 +312,7 @@ func (j *jsiiProxy_DataConsulPeering) PartitionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) PeerCaPems() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"peerCaPems",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataConsulPeering) PeerId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"peerId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataConsulPeering) PeerName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"peerName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataConsulPeering) PeerNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"peerNameInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataConsulPeering) PeerServerAddresses() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"peerServerAddresses",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataConsulPeering) PeerServerName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"peerServerName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataConsulPeering) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_DataConsulConfigEntry) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -331,7 +322,7 @@ func (j *jsiiProxy_DataConsulPeering) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) RawOverrides() interface{} {
+func (j *jsiiProxy_DataConsulConfigEntry) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -341,17 +332,7 @@ func (j *jsiiProxy_DataConsulPeering) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) State() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"state",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataConsulPeering) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_DataConsulConfigEntry) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -361,7 +342,7 @@ func (j *jsiiProxy_DataConsulPeering) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_DataConsulConfigEntry) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -371,7 +352,7 @@ func (j *jsiiProxy_DataConsulPeering) TerraformMetaArguments() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeering) TerraformResourceType() *string {
+func (j *jsiiProxy_DataConsulConfigEntry) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -382,17 +363,17 @@ func (j *jsiiProxy_DataConsulPeering) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/consul/d/peering consul_peering} Data Source.
-func NewDataConsulPeering(scope constructs.Construct, id *string, config *DataConsulPeeringConfig) DataConsulPeering {
+// Create a new {@link https://www.terraform.io/docs/providers/consul/d/config_entry consul_config_entry} Data Source.
+func NewDataConsulConfigEntry(scope constructs.Construct, id *string, config *DataConsulConfigEntryConfig) DataConsulConfigEntry {
 	_init_.Initialize()
 
-	if err := validateNewDataConsulPeeringParameters(scope, id, config); err != nil {
+	if err := validateNewDataConsulConfigEntryParameters(scope, id, config); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataConsulPeering{}
+	j := jsiiProxy_DataConsulConfigEntry{}
 
 	_jsii_.Create(
-		"@cdktf/provider-consul.dataConsulPeering.DataConsulPeering",
+		"@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -400,18 +381,18 @@ func NewDataConsulPeering(scope constructs.Construct, id *string, config *DataCo
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/consul/d/peering consul_peering} Data Source.
-func NewDataConsulPeering_Override(d DataConsulPeering, scope constructs.Construct, id *string, config *DataConsulPeeringConfig) {
+// Create a new {@link https://www.terraform.io/docs/providers/consul/d/config_entry consul_config_entry} Data Source.
+func NewDataConsulConfigEntry_Override(d DataConsulConfigEntry, scope constructs.Construct, id *string, config *DataConsulConfigEntryConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-consul.dataConsulPeering.DataConsulPeering",
+		"@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry",
 		[]interface{}{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataConsulPeering)SetCount(val *float64) {
+func (j *jsiiProxy_DataConsulConfigEntry)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -419,7 +400,7 @@ func (j *jsiiProxy_DataConsulPeering)SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataConsulPeering)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataConsulConfigEntry)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -427,7 +408,7 @@ func (j *jsiiProxy_DataConsulPeering)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataConsulPeering)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataConsulConfigEntry)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -435,7 +416,7 @@ func (j *jsiiProxy_DataConsulPeering)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataConsulPeering)SetId(val *string) {
+func (j *jsiiProxy_DataConsulConfigEntry)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,7 +427,18 @@ func (j *jsiiProxy_DataConsulPeering)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataConsulPeering)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataConsulConfigEntry)SetKind(val *string) {
+	if err := j.validateSetKindParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kind",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataConsulConfigEntry)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +449,29 @@ func (j *jsiiProxy_DataConsulPeering)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_DataConsulPeering)SetPartition(val *string) {
+func (j *jsiiProxy_DataConsulConfigEntry)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataConsulConfigEntry)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataConsulConfigEntry)SetPartition(val *string) {
 	if err := j.validateSetPartitionParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,18 +482,7 @@ func (j *jsiiProxy_DataConsulPeering)SetPartition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataConsulPeering)SetPeerName(val *string) {
-	if err := j.validateSetPeerNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"peerName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataConsulPeering)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataConsulConfigEntry)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -504,16 +507,16 @@ func (j *jsiiProxy_DataConsulPeering)SetProvider(val cdktf.TerraformProvider) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataConsulPeering_IsConstruct(x interface{}) *bool {
+func DataConsulConfigEntry_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateDataConsulPeering_IsConstructParameters(x); err != nil {
+	if err := validateDataConsulConfigEntry_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-consul.dataConsulPeering.DataConsulPeering",
+		"@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -523,16 +526,16 @@ func DataConsulPeering_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataConsulPeering_IsTerraformDataSource(x interface{}) *bool {
+func DataConsulConfigEntry_IsTerraformDataSource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateDataConsulPeering_IsTerraformDataSourceParameters(x); err != nil {
+	if err := validateDataConsulConfigEntry_IsTerraformDataSourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-consul.dataConsulPeering.DataConsulPeering",
+		"@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -542,16 +545,16 @@ func DataConsulPeering_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataConsulPeering_IsTerraformElement(x interface{}) *bool {
+func DataConsulConfigEntry_IsTerraformElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateDataConsulPeering_IsTerraformElementParameters(x); err != nil {
+	if err := validateDataConsulConfigEntry_IsTerraformElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-consul.dataConsulPeering.DataConsulPeering",
+		"@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,18 +563,18 @@ func DataConsulPeering_IsTerraformElement(x interface{}) *bool {
 	return returns
 }
 
-func DataConsulPeering_TfResourceType() *string {
+func DataConsulConfigEntry_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-consul.dataConsulPeering.DataConsulPeering",
+		"@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (d *jsiiProxy_DataConsulPeering) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataConsulConfigEntry) AddOverride(path *string, value interface{}) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
@@ -582,7 +585,7 @@ func (d *jsiiProxy_DataConsulPeering) AddOverride(path *string, value interface{
 	)
 }
 
-func (d *jsiiProxy_DataConsulPeering) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataConsulConfigEntry) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -598,7 +601,7 @@ func (d *jsiiProxy_DataConsulPeering) GetAnyMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (d *jsiiProxy_DataConsulPeering) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataConsulConfigEntry) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -614,7 +617,7 @@ func (d *jsiiProxy_DataConsulPeering) GetBooleanAttribute(terraformAttribute *st
 	return returns
 }
 
-func (d *jsiiProxy_DataConsulPeering) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DataConsulConfigEntry) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -630,7 +633,7 @@ func (d *jsiiProxy_DataConsulPeering) GetBooleanMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (d *jsiiProxy_DataConsulPeering) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DataConsulConfigEntry) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -646,7 +649,7 @@ func (d *jsiiProxy_DataConsulPeering) GetListAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (d *jsiiProxy_DataConsulPeering) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DataConsulConfigEntry) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -662,7 +665,7 @@ func (d *jsiiProxy_DataConsulPeering) GetNumberAttribute(terraformAttribute *str
 	return returns
 }
 
-func (d *jsiiProxy_DataConsulPeering) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DataConsulConfigEntry) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -678,7 +681,7 @@ func (d *jsiiProxy_DataConsulPeering) GetNumberListAttribute(terraformAttribute 
 	return returns
 }
 
-func (d *jsiiProxy_DataConsulPeering) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DataConsulConfigEntry) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -694,7 +697,7 @@ func (d *jsiiProxy_DataConsulPeering) GetNumberMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (d *jsiiProxy_DataConsulPeering) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DataConsulConfigEntry) GetStringAttribute(terraformAttribute *string) *string {
 	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -710,7 +713,7 @@ func (d *jsiiProxy_DataConsulPeering) GetStringAttribute(terraformAttribute *str
 	return returns
 }
 
-func (d *jsiiProxy_DataConsulPeering) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DataConsulConfigEntry) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -726,7 +729,7 @@ func (d *jsiiProxy_DataConsulPeering) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (d *jsiiProxy_DataConsulPeering) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataConsulConfigEntry) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -742,7 +745,7 @@ func (d *jsiiProxy_DataConsulPeering) InterpolationForAttribute(terraformAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataConsulPeering) OverrideLogicalId(newLogicalId *string) {
+func (d *jsiiProxy_DataConsulConfigEntry) OverrideLogicalId(newLogicalId *string) {
 	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
@@ -753,7 +756,7 @@ func (d *jsiiProxy_DataConsulPeering) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (d *jsiiProxy_DataConsulPeering) ResetId() {
+func (d *jsiiProxy_DataConsulConfigEntry) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
@@ -761,7 +764,15 @@ func (d *jsiiProxy_DataConsulPeering) ResetId() {
 	)
 }
 
-func (d *jsiiProxy_DataConsulPeering) ResetOverrideLogicalId() {
+func (d *jsiiProxy_DataConsulConfigEntry) ResetNamespace() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataConsulConfigEntry) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
@@ -769,7 +780,7 @@ func (d *jsiiProxy_DataConsulPeering) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataConsulPeering) ResetPartition() {
+func (d *jsiiProxy_DataConsulConfigEntry) ResetPartition() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPartition",
@@ -777,7 +788,7 @@ func (d *jsiiProxy_DataConsulPeering) ResetPartition() {
 	)
 }
 
-func (d *jsiiProxy_DataConsulPeering) SynthesizeAttributes() *map[string]interface{} {
+func (d *jsiiProxy_DataConsulConfigEntry) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -790,7 +801,7 @@ func (d *jsiiProxy_DataConsulPeering) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataConsulPeering) ToMetadata() interface{} {
+func (d *jsiiProxy_DataConsulConfigEntry) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
@@ -803,7 +814,7 @@ func (d *jsiiProxy_DataConsulPeering) ToMetadata() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataConsulPeering) ToString() *string {
+func (d *jsiiProxy_DataConsulConfigEntry) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -816,7 +827,7 @@ func (d *jsiiProxy_DataConsulPeering) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataConsulPeering) ToTerraform() interface{} {
+func (d *jsiiProxy_DataConsulConfigEntry) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(

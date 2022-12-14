@@ -29,7 +29,6 @@ type Peering interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	ExportedServiceCount() *float64
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -41,7 +40,6 @@ type Peering interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	ImportedServiceCount() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -187,16 +185,6 @@ func (j *jsiiProxy_Peering) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Peering) ExportedServiceCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"exportedServiceCount",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Peering) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -242,16 +230,6 @@ func (j *jsiiProxy_Peering) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Peering) ImportedServiceCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"importedServiceCount",
 		&returns,
 	)
 	return returns

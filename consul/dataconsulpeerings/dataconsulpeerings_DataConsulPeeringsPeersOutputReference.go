@@ -26,11 +26,9 @@ type DataConsulPeeringsPeersOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DeletedAt() *string
-	ExportedServiceCount() *float64
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	ImportedServiceCount() *float64
 	InternalValue() *DataConsulPeeringsPeers
 	SetInternalValue(val *DataConsulPeeringsPeers)
 	Meta() cdktf.StringMap
@@ -128,16 +126,6 @@ func (j *jsiiProxy_DataConsulPeeringsPeersOutputReference) DeletedAt() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataConsulPeeringsPeersOutputReference) ExportedServiceCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"exportedServiceCount",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataConsulPeeringsPeersOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -153,16 +141,6 @@ func (j *jsiiProxy_DataConsulPeeringsPeersOutputReference) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataConsulPeeringsPeersOutputReference) ImportedServiceCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"importedServiceCount",
 		&returns,
 	)
 	return returns

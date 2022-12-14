@@ -1,4 +1,4 @@
-package dataconsulpeering
+package dataconsulconfigentry
 
 import (
 	"reflect"
@@ -8,14 +8,14 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-consul.dataConsulPeering.DataConsulPeering",
-		reflect.TypeOf((*DataConsulPeering)(nil)).Elem(),
+		"@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry",
+		reflect.TypeOf((*DataConsulConfigEntry)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "configJson", GoGetter: "ConfigJson"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
-			_jsii_.MemberProperty{JsiiProperty: "deletedAt", GoGetter: "DeletedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -32,24 +32,23 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "kind", GoGetter: "Kind"},
+			_jsii_.MemberProperty{JsiiProperty: "kindInput", GoGetter: "KindInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberProperty{JsiiProperty: "meta", GoGetter: "Meta"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "namespace", GoGetter: "Namespace"},
+			_jsii_.MemberProperty{JsiiProperty: "namespaceInput", GoGetter: "NamespaceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "partition", GoGetter: "Partition"},
 			_jsii_.MemberProperty{JsiiProperty: "partitionInput", GoGetter: "PartitionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "peerCaPems", GoGetter: "PeerCaPems"},
-			_jsii_.MemberProperty{JsiiProperty: "peerId", GoGetter: "PeerId"},
-			_jsii_.MemberProperty{JsiiProperty: "peerName", GoGetter: "PeerName"},
-			_jsii_.MemberProperty{JsiiProperty: "peerNameInput", GoGetter: "PeerNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "peerServerAddresses", GoGetter: "PeerServerAddresses"},
-			_jsii_.MemberProperty{JsiiProperty: "peerServerName", GoGetter: "PeerServerName"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNamespace", GoMethod: "ResetNamespace"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPartition", GoMethod: "ResetPartition"},
-			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
@@ -59,13 +58,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataConsulPeering{}
+			j := jsiiProxy_DataConsulConfigEntry{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-consul.dataConsulPeering.DataConsulPeeringConfig",
-		reflect.TypeOf((*DataConsulPeeringConfig)(nil)).Elem(),
+		"@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig",
+		reflect.TypeOf((*DataConsulConfigEntryConfig)(nil)).Elem(),
 	)
 }
