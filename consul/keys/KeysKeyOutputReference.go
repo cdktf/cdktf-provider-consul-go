@@ -2,9 +2,9 @@ package keys
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v4/keys/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/keys/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
