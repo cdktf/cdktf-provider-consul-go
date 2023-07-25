@@ -2,14 +2,14 @@ package dataconsulnetworksegments
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulnetworksegments/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulnetworksegments/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/network_segments consul_network_segments}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/network_segments consul_network_segments}.
 type DataConsulNetworkSegments interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataConsulNetworkSegments) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/network_segments consul_network_segments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/network_segments consul_network_segments} Data Source.
 func NewDataConsulNetworkSegments(scope constructs.Construct, id *string, config *DataConsulNetworkSegmentsConfig) DataConsulNetworkSegments {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataConsulNetworkSegments(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/network_segments consul_network_segments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/network_segments consul_network_segments} Data Source.
 func NewDataConsulNetworkSegments_Override(d DataConsulNetworkSegments, scope constructs.Construct, id *string, config *DataConsulNetworkSegmentsConfig) {
 	_init_.Initialize()
 

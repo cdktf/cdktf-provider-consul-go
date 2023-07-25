@@ -2,14 +2,14 @@ package service
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/service/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/service/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service consul_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service consul_service}.
 type Service interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -596,7 +596,7 @@ func (j *jsiiProxy_Service) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service consul_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service consul_service} Resource.
 func NewService(scope constructs.Construct, id *string, config *ServiceConfig) Service {
 	_init_.Initialize()
 
@@ -614,7 +614,7 @@ func NewService(scope constructs.Construct, id *string, config *ServiceConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service consul_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service consul_service} Resource.
 func NewService_Override(s Service, scope constructs.Construct, id *string, config *ServiceConfig) {
 	_init_.Initialize()
 

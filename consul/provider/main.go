@@ -16,6 +16,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "addressInput", GoGetter: "AddressInput"},
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
 			_jsii_.MemberProperty{JsiiProperty: "aliasInput", GoGetter: "AliasInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authJwt", GoGetter: "AuthJwt"},
+			_jsii_.MemberProperty{JsiiProperty: "authJwtInput", GoGetter: "AuthJwtInput"},
 			_jsii_.MemberProperty{JsiiProperty: "caFile", GoGetter: "CaFile"},
 			_jsii_.MemberProperty{JsiiProperty: "caFileInput", GoGetter: "CaFileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "caPath", GoGetter: "CaPath"},
@@ -50,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAddress", GoMethod: "ResetAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthJwt", GoMethod: "ResetAuthJwt"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaFile", GoMethod: "ResetCaFile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaPath", GoMethod: "ResetCaPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaPem", GoMethod: "ResetCaPem"},
@@ -82,6 +85,10 @@ func init() {
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
 			return &j
 		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-consul.provider.ConsulProviderAuthJwt",
+		reflect.TypeOf((*ConsulProviderAuthJwt)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-consul.provider.ConsulProviderConfig",

@@ -2,14 +2,14 @@ package acltokenroleattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/acltokenroleattachment/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/acltokenroleattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment}.
 type AclTokenRoleAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_AclTokenRoleAttachment) TokenIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment} Resource.
 func NewAclTokenRoleAttachment(scope constructs.Construct, id *string, config *AclTokenRoleAttachmentConfig) AclTokenRoleAttachment {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewAclTokenRoleAttachment(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment} Resource.
 func NewAclTokenRoleAttachment_Override(a AclTokenRoleAttachment, scope constructs.Construct, id *string, config *AclTokenRoleAttachmentConfig) {
 	_init_.Initialize()
 

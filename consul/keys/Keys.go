@@ -2,14 +2,14 @@ package keys
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/keys/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/keys/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys consul_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys consul_keys}.
 type Keys interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -417,7 +417,7 @@ func (j *jsiiProxy_Keys) Var() cdktf.StringMap {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys consul_keys} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys consul_keys} Resource.
 func NewKeys(scope constructs.Construct, id *string, config *KeysConfig) Keys {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewKeys(scope constructs.Construct, id *string, config *KeysConfig) Keys {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys consul_keys} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys consul_keys} Resource.
 func NewKeys_Override(k Keys, scope constructs.Construct, id *string, config *KeysConfig) {
 	_init_.Initialize()
 

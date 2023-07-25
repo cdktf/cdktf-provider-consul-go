@@ -2,14 +2,14 @@ package autopilotconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/autopilotconfig/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/autopilotconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/autopilot_config consul_autopilot_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/autopilot_config consul_autopilot_config}.
 type AutopilotConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -478,7 +478,7 @@ func (j *jsiiProxy_AutopilotConfig) UpgradeVersionTagInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/autopilot_config consul_autopilot_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/autopilot_config consul_autopilot_config} Resource.
 func NewAutopilotConfig(scope constructs.Construct, id *string, config *AutopilotConfigConfig) AutopilotConfig {
 	_init_.Initialize()
 
@@ -496,7 +496,7 @@ func NewAutopilotConfig(scope constructs.Construct, id *string, config *Autopilo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/autopilot_config consul_autopilot_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/autopilot_config consul_autopilot_config} Resource.
 func NewAutopilotConfig_Override(a AutopilotConfig, scope constructs.Construct, id *string, config *AutopilotConfigConfig) {
 	_init_.Initialize()
 

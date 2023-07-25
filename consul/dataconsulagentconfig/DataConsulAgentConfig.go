@@ -2,14 +2,14 @@ package dataconsulagentconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulagentconfig/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulagentconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/agent_config consul_agent_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/agent_config consul_agent_config}.
 type DataConsulAgentConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataConsulAgentConfig) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/agent_config consul_agent_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/agent_config consul_agent_config} Data Source.
 func NewDataConsulAgentConfig(scope constructs.Construct, id *string, config *DataConsulAgentConfigConfig) DataConsulAgentConfig {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataConsulAgentConfig(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/agent_config consul_agent_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/agent_config consul_agent_config} Data Source.
 func NewDataConsulAgentConfig_Override(d DataConsulAgentConfig, scope constructs.Construct, id *string, config *DataConsulAgentConfigConfig) {
 	_init_.Initialize()
 

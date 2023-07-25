@@ -2,14 +2,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/provider/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs consul}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs consul}.
 type ConsulProvider interface {
 	cdktf.TerraformProvider
 	Address() *string
@@ -18,6 +18,9 @@ type ConsulProvider interface {
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
+	AuthJwt() *ConsulProviderAuthJwt
+	SetAuthJwt(val *ConsulProviderAuthJwt)
+	AuthJwtInput() *ConsulProviderAuthJwt
 	CaFile() *string
 	SetCaFile(val *string)
 	CaFileInput() *string
@@ -87,6 +90,7 @@ type ConsulProvider interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAddress()
 	ResetAlias()
+	ResetAuthJwt()
 	ResetCaFile()
 	ResetCaPath()
 	ResetCaPem()
@@ -154,6 +158,26 @@ func (j *jsiiProxy_ConsulProvider) AliasInput() *string {
 	_jsii_.Get(
 		j,
 		"aliasInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulProvider) AuthJwt() *ConsulProviderAuthJwt {
+	var returns *ConsulProviderAuthJwt
+	_jsii_.Get(
+		j,
+		"authJwt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulProvider) AuthJwtInput() *ConsulProviderAuthJwt {
+	var returns *ConsulProviderAuthJwt
+	_jsii_.Get(
+		j,
+		"authJwtInput",
 		&returns,
 	)
 	return returns
@@ -540,7 +564,7 @@ func (j *jsiiProxy_ConsulProvider) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs consul} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs consul} Resource.
 func NewConsulProvider(scope constructs.Construct, id *string, config *ConsulProviderConfig) ConsulProvider {
 	_init_.Initialize()
 
@@ -558,7 +582,7 @@ func NewConsulProvider(scope constructs.Construct, id *string, config *ConsulPro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs consul} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs consul} Resource.
 func NewConsulProvider_Override(c ConsulProvider, scope constructs.Construct, id *string, config *ConsulProviderConfig) {
 	_init_.Initialize()
 
@@ -581,6 +605,17 @@ func (j *jsiiProxy_ConsulProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConsulProvider)SetAuthJwt(val *ConsulProviderAuthJwt) {
+	if err := j.validateSetAuthJwtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authJwt",
 		val,
 	)
 }
@@ -821,6 +856,14 @@ func (c *jsiiProxy_ConsulProvider) ResetAlias() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAlias",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulProvider) ResetAuthJwt() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAuthJwt",
 		nil, // no parameters
 	)
 }

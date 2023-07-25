@@ -2,14 +2,14 @@ package acltokenpolicyattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/acltokenpolicyattachment/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/acltokenpolicyattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_policy_attachment consul_acl_token_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token_policy_attachment consul_acl_token_policy_attachment}.
 type AclTokenPolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_AclTokenPolicyAttachment) TokenIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_policy_attachment consul_acl_token_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token_policy_attachment consul_acl_token_policy_attachment} Resource.
 func NewAclTokenPolicyAttachment(scope constructs.Construct, id *string, config *AclTokenPolicyAttachmentConfig) AclTokenPolicyAttachment {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewAclTokenPolicyAttachment(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_policy_attachment consul_acl_token_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token_policy_attachment consul_acl_token_policy_attachment} Resource.
 func NewAclTokenPolicyAttachment_Override(a AclTokenPolicyAttachment, scope constructs.Construct, id *string, config *AclTokenPolicyAttachmentConfig) {
 	_init_.Initialize()
 

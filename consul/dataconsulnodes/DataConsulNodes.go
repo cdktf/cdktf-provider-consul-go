@@ -2,14 +2,14 @@ package dataconsulnodes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulnodes/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulnodes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/nodes consul_nodes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/nodes consul_nodes}.
 type DataConsulNodes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -326,7 +326,7 @@ func (j *jsiiProxy_DataConsulNodes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/nodes consul_nodes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/nodes consul_nodes} Data Source.
 func NewDataConsulNodes(scope constructs.Construct, id *string, config *DataConsulNodesConfig) DataConsulNodes {
 	_init_.Initialize()
 
@@ -344,7 +344,7 @@ func NewDataConsulNodes(scope constructs.Construct, id *string, config *DataCons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/nodes consul_nodes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/nodes consul_nodes} Data Source.
 func NewDataConsulNodes_Override(d DataConsulNodes, scope constructs.Construct, id *string, config *DataConsulNodesConfig) {
 	_init_.Initialize()
 

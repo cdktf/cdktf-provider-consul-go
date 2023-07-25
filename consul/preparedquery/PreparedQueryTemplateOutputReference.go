@@ -2,9 +2,9 @@ package preparedquery
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/preparedquery/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/preparedquery/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -32,6 +32,9 @@ type PreparedQueryTemplateOutputReference interface {
 	Regexp() *string
 	SetRegexp(val *string)
 	RegexpInput() *string
+	RemoveEmptyTags() interface{}
+	SetRemoveEmptyTags(val interface{})
+	RemoveEmptyTagsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type PreparedQueryTemplateOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetRemoveEmptyTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +151,26 @@ func (j *jsiiProxy_PreparedQueryTemplateOutputReference) RegexpInput() *string {
 	_jsii_.Get(
 		j,
 		"regexpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PreparedQueryTemplateOutputReference) RemoveEmptyTags() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"removeEmptyTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PreparedQueryTemplateOutputReference) RemoveEmptyTagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"removeEmptyTagsInput",
 		&returns,
 	)
 	return returns
@@ -260,6 +284,17 @@ func (j *jsiiProxy_PreparedQueryTemplateOutputReference)SetRegexp(val *string) {
 	_jsii_.Set(
 		j,
 		"regexp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PreparedQueryTemplateOutputReference)SetRemoveEmptyTags(val interface{}) {
+	if err := j.validateSetRemoveEmptyTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"removeEmptyTags",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (p *jsiiProxy_PreparedQueryTemplateOutputReference) InterpolationForAttribu
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PreparedQueryTemplateOutputReference) ResetRemoveEmptyTags() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRemoveEmptyTags",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PreparedQueryTemplateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

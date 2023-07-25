@@ -116,6 +116,8 @@ func (a *jsiiProxy_AclAuthMethod) validatePutNamespaceRuleParameters(value inter
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *[]*AclAuthMethodNamespaceRule:
 		value := value.(*[]*AclAuthMethodNamespaceRule)
 		for idx_cd4240, v := range *value {
@@ -131,11 +133,9 @@ func (a *jsiiProxy_AclAuthMethod) validatePutNamespaceRuleParameters(value inter
 				return err
 			}
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: *[]*AclAuthMethodNamespaceRule, cdktf.IResolvable; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AclAuthMethodNamespaceRule; received %#v (a %T)", value, value)
 		}
 	}
 

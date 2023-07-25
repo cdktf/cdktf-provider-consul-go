@@ -2,14 +2,14 @@ package intention
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/intention/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/intention/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention consul_intention}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/intention consul_intention}.
 type Intention interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -475,7 +475,7 @@ func (j *jsiiProxy_Intention) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention consul_intention} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/intention consul_intention} Resource.
 func NewIntention(scope constructs.Construct, id *string, config *IntentionConfig) Intention {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewIntention(scope constructs.Construct, id *string, config *IntentionConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention consul_intention} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/intention consul_intention} Resource.
 func NewIntention_Override(i Intention, scope constructs.Construct, id *string, config *IntentionConfig) {
 	_init_.Initialize()
 

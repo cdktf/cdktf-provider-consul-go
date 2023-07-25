@@ -2,13 +2,13 @@ package provider
 
 
 type ConsulProviderHeader struct {
-	// The header name.
+	// The name of the header.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#name ConsulProvider#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#name ConsulProvider#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The header value.
+	// The value of the header.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#value ConsulProvider#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#value ConsulProvider#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

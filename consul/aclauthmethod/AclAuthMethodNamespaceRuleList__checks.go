@@ -28,6 +28,8 @@ func (a *jsiiProxy_AclAuthMethodNamespaceRuleList) validateResolveParameters(_co
 
 func (j *jsiiProxy_AclAuthMethodNamespaceRuleList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *[]*AclAuthMethodNamespaceRule:
 		val := val.(*[]*AclAuthMethodNamespaceRule)
 		for idx_97dfc6, v := range *val {
@@ -43,11 +45,9 @@ func (j *jsiiProxy_AclAuthMethodNamespaceRuleList) validateSetInternalValueParam
 				return err
 			}
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *[]*AclAuthMethodNamespaceRule, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*AclAuthMethodNamespaceRule; received %#v (a %T)", val, val)
 		}
 	}
 

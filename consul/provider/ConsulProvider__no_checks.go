@@ -24,6 +24,10 @@ func validateConsulProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_ConsulProvider) validateSetAuthJwtParameters(val *ConsulProviderAuthJwt) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulProvider) validateSetHeaderParameters(val interface{}) error {
 	return nil
 }

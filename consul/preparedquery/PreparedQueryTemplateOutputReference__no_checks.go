@@ -64,6 +64,10 @@ func (j *jsiiProxy_PreparedQueryTemplateOutputReference) validateSetRegexpParame
 	return nil
 }
 
+func (j *jsiiProxy_PreparedQueryTemplateOutputReference) validateSetRemoveEmptyTagsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PreparedQueryTemplateOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package peering
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/peering/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/peering/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering consul_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/peering consul_peering}.
 type Peering interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -446,7 +446,7 @@ func (j *jsiiProxy_Peering) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering consul_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/peering consul_peering} Resource.
 func NewPeering(scope constructs.Construct, id *string, config *PeeringConfig) Peering {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewPeering(scope constructs.Construct, id *string, config *PeeringConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering consul_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/peering consul_peering} Resource.
 func NewPeering_Override(p Peering, scope constructs.Construct, id *string, config *PeeringConfig) {
 	_init_.Initialize()
 

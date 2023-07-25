@@ -2,14 +2,14 @@ package dataconsulcatalogservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulcatalogservice/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulcatalogservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_service consul_catalog_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/catalog_service consul_catalog_service}.
 type DataConsulCatalogService interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -388,7 +388,7 @@ func (j *jsiiProxy_DataConsulCatalogService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_service consul_catalog_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/catalog_service consul_catalog_service} Data Source.
 func NewDataConsulCatalogService(scope constructs.Construct, id *string, config *DataConsulCatalogServiceConfig) DataConsulCatalogService {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewDataConsulCatalogService(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_service consul_catalog_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/catalog_service consul_catalog_service} Data Source.
 func NewDataConsulCatalogService_Override(d DataConsulCatalogService, scope constructs.Construct, id *string, config *DataConsulCatalogServiceConfig) {
 	_init_.Initialize()
 

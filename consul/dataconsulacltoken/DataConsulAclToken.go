@@ -2,14 +2,14 @@ package dataconsulacltoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulacltoken/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulacltoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/acl_token consul_acl_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token consul_acl_token}.
 type DataConsulAclToken interface {
 	cdktf.TerraformDataSource
 	AccessorId() *string
@@ -406,7 +406,7 @@ func (j *jsiiProxy_DataConsulAclToken) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/acl_token consul_acl_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token consul_acl_token} Data Source.
 func NewDataConsulAclToken(scope constructs.Construct, id *string, config *DataConsulAclTokenConfig) DataConsulAclToken {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewDataConsulAclToken(scope constructs.Construct, id *string, config *DataC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/acl_token consul_acl_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token consul_acl_token} Data Source.
 func NewDataConsulAclToken_Override(d DataConsulAclToken, scope constructs.Construct, id *string, config *DataConsulAclTokenConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package dataconsulcatalogservices
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulcatalogservices/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulcatalogservices/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services consul_catalog_services}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/catalog_services consul_catalog_services}.
 type DataConsulCatalogServices interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -326,7 +326,7 @@ func (j *jsiiProxy_DataConsulCatalogServices) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services consul_catalog_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/catalog_services consul_catalog_services} Data Source.
 func NewDataConsulCatalogServices(scope constructs.Construct, id *string, config *DataConsulCatalogServicesConfig) DataConsulCatalogServices {
 	_init_.Initialize()
 
@@ -344,7 +344,7 @@ func NewDataConsulCatalogServices(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services consul_catalog_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/catalog_services consul_catalog_services} Data Source.
 func NewDataConsulCatalogServices_Override(d DataConsulCatalogServices, scope constructs.Construct, id *string, config *DataConsulCatalogServicesConfig) {
 	_init_.Initialize()
 

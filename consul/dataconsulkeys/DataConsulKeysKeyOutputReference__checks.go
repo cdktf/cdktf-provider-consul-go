@@ -173,6 +173,8 @@ func (j *jsiiProxy_DataConsulKeysKeyOutputReference) validateSetDefaultParameter
 
 func (j *jsiiProxy_DataConsulKeysKeyOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataConsulKeysKey:
 		val := val.(*DataConsulKeysKey)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_DataConsulKeysKeyOutputReference) validateSetInternalValuePar
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataConsulKeysKey, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataConsulKeysKey; received %#v (a %T)", val, val)
 		}
 	}
 

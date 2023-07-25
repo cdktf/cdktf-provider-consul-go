@@ -2,14 +2,14 @@ package certificateauthority
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/certificateauthority/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/certificateauthority/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority consul_certificate_authority}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority consul_certificate_authority}.
 type CertificateAuthority interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -17,6 +17,9 @@ type CertificateAuthority interface {
 	Config() *map[string]*string
 	SetConfig(val *map[string]*string)
 	ConfigInput() *map[string]*string
+	ConfigJson() *string
+	SetConfigJson(val *string)
+	ConfigJsonInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -92,6 +95,8 @@ type CertificateAuthority interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetConfig()
+	ResetConfigJson()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -136,6 +141,26 @@ func (j *jsiiProxy_CertificateAuthority) ConfigInput() *map[string]*string {
 	_jsii_.Get(
 		j,
 		"configInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateAuthority) ConfigJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateAuthority) ConfigJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configJsonInput",
 		&returns,
 	)
 	return returns
@@ -332,7 +357,7 @@ func (j *jsiiProxy_CertificateAuthority) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority consul_certificate_authority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority consul_certificate_authority} Resource.
 func NewCertificateAuthority(scope constructs.Construct, id *string, config *CertificateAuthorityConfig) CertificateAuthority {
 	_init_.Initialize()
 
@@ -350,7 +375,7 @@ func NewCertificateAuthority(scope constructs.Construct, id *string, config *Cer
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority consul_certificate_authority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority consul_certificate_authority} Resource.
 func NewCertificateAuthority_Override(c CertificateAuthority, scope constructs.Construct, id *string, config *CertificateAuthorityConfig) {
 	_init_.Initialize()
 
@@ -368,6 +393,17 @@ func (j *jsiiProxy_CertificateAuthority)SetConfig(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"config",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificateAuthority)SetConfigJson(val *string) {
+	if err := j.validateSetConfigJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"configJson",
 		val,
 	)
 }
@@ -725,6 +761,22 @@ func (c *jsiiProxy_CertificateAuthority) OverrideLogicalId(newLogicalId *string)
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CertificateAuthority) ResetConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificateAuthority) ResetConfigJson() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetConfigJson",
+		nil, // no parameters
 	)
 }
 

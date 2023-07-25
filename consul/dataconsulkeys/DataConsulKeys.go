@@ -2,14 +2,14 @@ package dataconsulkeys
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulkeys/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulkeys/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/keys consul_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/keys consul_keys}.
 type DataConsulKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -389,7 +389,7 @@ func (j *jsiiProxy_DataConsulKeys) Var() cdktf.StringMap {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/keys consul_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/keys consul_keys} Data Source.
 func NewDataConsulKeys(scope constructs.Construct, id *string, config *DataConsulKeysConfig) DataConsulKeys {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewDataConsulKeys(scope constructs.Construct, id *string, config *DataConsu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/keys consul_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/keys consul_keys} Data Source.
 func NewDataConsulKeys_Override(d DataConsulKeys, scope constructs.Construct, id *string, config *DataConsulKeysConfig) {
 	_init_.Initialize()
 

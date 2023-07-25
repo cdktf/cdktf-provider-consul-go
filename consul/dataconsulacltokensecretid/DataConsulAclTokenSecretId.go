@@ -2,14 +2,14 @@ package dataconsulacltokensecretid
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulacltokensecretid/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulacltokensecretid/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/acl_token_secret_id consul_acl_token_secret_id}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token_secret_id consul_acl_token_secret_id}.
 type DataConsulAclTokenSecretId interface {
 	cdktf.TerraformDataSource
 	AccessorId() *string
@@ -375,7 +375,7 @@ func (j *jsiiProxy_DataConsulAclTokenSecretId) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/acl_token_secret_id consul_acl_token_secret_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token_secret_id consul_acl_token_secret_id} Data Source.
 func NewDataConsulAclTokenSecretId(scope constructs.Construct, id *string, config *DataConsulAclTokenSecretIdConfig) DataConsulAclTokenSecretId {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewDataConsulAclTokenSecretId(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/acl_token_secret_id consul_acl_token_secret_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token_secret_id consul_acl_token_secret_id} Data Source.
 func NewDataConsulAclTokenSecretId_Override(d DataConsulAclTokenSecretId, scope constructs.Construct, id *string, config *DataConsulAclTokenSecretIdConfig) {
 	_init_.Initialize()
 

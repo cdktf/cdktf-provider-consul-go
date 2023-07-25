@@ -2,14 +2,14 @@ package dataconsulaclauthmethod
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulaclauthmethod/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulaclauthmethod/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/acl_auth_method consul_acl_auth_method}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_auth_method consul_acl_auth_method}.
 type DataConsulAclAuthMethod interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -417,7 +417,7 @@ func (j *jsiiProxy_DataConsulAclAuthMethod) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/acl_auth_method consul_acl_auth_method} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_auth_method consul_acl_auth_method} Data Source.
 func NewDataConsulAclAuthMethod(scope constructs.Construct, id *string, config *DataConsulAclAuthMethodConfig) DataConsulAclAuthMethod {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewDataConsulAclAuthMethod(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/acl_auth_method consul_acl_auth_method} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_auth_method consul_acl_auth_method} Data Source.
 func NewDataConsulAclAuthMethod_Override(d DataConsulAclAuthMethod, scope constructs.Construct, id *string, config *DataConsulAclAuthMethodConfig) {
 	_init_.Initialize()
 

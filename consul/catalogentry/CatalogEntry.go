@@ -2,14 +2,14 @@ package catalogentry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/catalogentry/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/catalogentry/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry consul_catalog_entry}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry consul_catalog_entry}.
 type CatalogEntry interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_CatalogEntry) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry consul_catalog_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry consul_catalog_entry} Resource.
 func NewCatalogEntry(scope constructs.Construct, id *string, config *CatalogEntryConfig) CatalogEntry {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewCatalogEntry(scope constructs.Construct, id *string, config *CatalogEntr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry consul_catalog_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry consul_catalog_entry} Resource.
 func NewCatalogEntry_Override(c CatalogEntry, scope constructs.Construct, id *string, config *CatalogEntryConfig) {
 	_init_.Initialize()
 

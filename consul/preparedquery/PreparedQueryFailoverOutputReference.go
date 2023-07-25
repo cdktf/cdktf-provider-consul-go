@@ -2,9 +2,9 @@ package preparedquery
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/preparedquery/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/preparedquery/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,6 +35,8 @@ type PreparedQueryFailoverOutputReference interface {
 	NearestN() *float64
 	SetNearestN(val *float64)
 	NearestNInput() *float64
+	Targets() PreparedQueryFailoverTargetsList
+	TargetsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,8 +69,10 @@ type PreparedQueryFailoverOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutTargets(value interface{})
 	ResetDatacenters()
 	ResetNearestN()
+	ResetTargets()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -169,6 +173,26 @@ func (j *jsiiProxy_PreparedQueryFailoverOutputReference) NearestNInput() *float6
 	_jsii_.Get(
 		j,
 		"nearestNInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PreparedQueryFailoverOutputReference) Targets() PreparedQueryFailoverTargetsList {
+	var returns PreparedQueryFailoverTargetsList
+	_jsii_.Get(
+		j,
+		"targets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PreparedQueryFailoverOutputReference) TargetsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"targetsInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +509,17 @@ func (p *jsiiProxy_PreparedQueryFailoverOutputReference) InterpolationForAttribu
 	return returns
 }
 
+func (p *jsiiProxy_PreparedQueryFailoverOutputReference) PutTargets(value interface{}) {
+	if err := p.validatePutTargetsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putTargets",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PreparedQueryFailoverOutputReference) ResetDatacenters() {
 	_jsii_.InvokeVoid(
 		p,
@@ -497,6 +532,14 @@ func (p *jsiiProxy_PreparedQueryFailoverOutputReference) ResetNearestN() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetNearestN",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PreparedQueryFailoverOutputReference) ResetTargets() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTargets",
 		nil, // no parameters
 	)
 }

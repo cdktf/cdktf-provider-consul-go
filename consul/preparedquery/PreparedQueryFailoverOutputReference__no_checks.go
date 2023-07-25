@@ -44,6 +44,10 @@ func (p *jsiiProxy_PreparedQueryFailoverOutputReference) validateInterpolationFo
 	return nil
 }
 
+func (p *jsiiProxy_PreparedQueryFailoverOutputReference) validatePutTargetsParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PreparedQueryFailoverOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package agentservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/agentservice/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/agentservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service consul_agent_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/agent_service consul_agent_service}.
 type AgentService interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -381,7 +381,7 @@ func (j *jsiiProxy_AgentService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service consul_agent_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/agent_service consul_agent_service} Resource.
 func NewAgentService(scope constructs.Construct, id *string, config *AgentServiceConfig) AgentService {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewAgentService(scope constructs.Construct, id *string, config *AgentServic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service consul_agent_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/agent_service consul_agent_service} Resource.
 func NewAgentService_Override(a AgentService, scope constructs.Construct, id *string, config *AgentServiceConfig) {
 	_init_.Initialize()
 

@@ -19,26 +19,26 @@ type KeyPrefixConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#path_prefix KeyPrefix#path_prefix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#path_prefix KeyPrefix#path_prefix}.
 	PathPrefix *string `field:"required" json:"pathPrefix" yaml:"pathPrefix"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#datacenter KeyPrefix#datacenter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#datacenter KeyPrefix#datacenter}.
 	Datacenter *string `field:"optional" json:"datacenter" yaml:"datacenter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#id KeyPrefix#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#id KeyPrefix#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#namespace KeyPrefix#namespace}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#namespace KeyPrefix#namespace}.
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#partition KeyPrefix#partition}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#partition KeyPrefix#partition}.
 	Partition *string `field:"optional" json:"partition" yaml:"partition"`
 	// subkey block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#subkey KeyPrefix#subkey}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#subkey KeyPrefix#subkey}
 	Subkey interface{} `field:"optional" json:"subkey" yaml:"subkey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#subkeys KeyPrefix#subkeys}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#subkeys KeyPrefix#subkeys}.
 	Subkeys *map[string]*string `field:"optional" json:"subkeys" yaml:"subkeys"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#token KeyPrefix#token}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#token KeyPrefix#token}.
 	Token *string `field:"optional" json:"token" yaml:"token"`
 }
 

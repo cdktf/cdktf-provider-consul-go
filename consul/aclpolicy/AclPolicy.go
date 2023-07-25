@@ -2,14 +2,14 @@ package aclpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v5/aclpolicy/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/aclpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy consul_acl_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy consul_acl_policy}.
 type AclPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_AclPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy consul_acl_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy consul_acl_policy} Resource.
 func NewAclPolicy(scope constructs.Construct, id *string, config *AclPolicyConfig) AclPolicy {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewAclPolicy(scope constructs.Construct, id *string, config *AclPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy consul_acl_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy consul_acl_policy} Resource.
 func NewAclPolicy_Override(a AclPolicy, scope constructs.Construct, id *string, config *AclPolicyConfig) {
 	_init_.Initialize()
 
