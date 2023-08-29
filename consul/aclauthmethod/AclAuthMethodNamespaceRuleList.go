@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package aclauthmethod
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v7/jsii"
 
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v6/aclauthmethod/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v7/aclauthmethod/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
