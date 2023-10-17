@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataConsulAutopilotHealth) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func validateDataConsulAutopilotHealth_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataConsulAutopilotHealth_IsConstructParameters(x interface{}) error {
 	return nil
 }

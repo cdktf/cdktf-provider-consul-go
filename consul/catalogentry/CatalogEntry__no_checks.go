@@ -7,6 +7,10 @@ package catalogentry
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CatalogEntry) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CatalogEntry) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CatalogEntry) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (c *jsiiProxy_CatalogEntry) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CatalogEntry) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CatalogEntry) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CatalogEntry) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (c *jsiiProxy_CatalogEntry) validatePutServiceParameters(value interface{}) error {
+	return nil
+}
+
+func validateCatalogEntry_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

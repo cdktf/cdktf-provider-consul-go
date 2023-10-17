@@ -7,6 +7,10 @@ package namespacepolicyattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NamespacePolicyAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NamespacePolicyAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (n *jsiiProxy_NamespacePolicyAttachment) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (n *jsiiProxy_NamespacePolicyAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NamespacePolicyAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (n *jsiiProxy_NamespacePolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NamespacePolicyAttachment) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateNamespacePolicyAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

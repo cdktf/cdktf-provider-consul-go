@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataConsulKeyPrefix) validatePutSubkeyParameters(value interf
 	return nil
 }
 
+func validateDataConsulKeyPrefix_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataConsulKeyPrefix_IsConstructParameters(x interface{}) error {
 	return nil
 }

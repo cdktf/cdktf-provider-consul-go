@@ -5,10 +5,10 @@ package networkarea
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v7/networkarea/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v8/networkarea/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -79,6 +79,9 @@ type NetworkArea interface {
 	UseTls() interface{}
 	SetUseTls(val interface{})
 	UseTlsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -100,7 +103,12 @@ type NetworkArea interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -571,6 +579,25 @@ func (j *jsiiProxy_NetworkArea)SetUseTls(val interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a NetworkArea resource upon running "cdktf plan <stack-name>".
+func NetworkArea_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateNetworkArea_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-consul.networkArea.NetworkArea",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -653,6 +680,17 @@ func NetworkArea_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (n *jsiiProxy_NetworkArea) AddMoveTarget(moveTarget *string) {
+	if err := n.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (n *jsiiProxy_NetworkArea) AddOverride(path *string, value interface{}) {
@@ -810,6 +848,17 @@ func (n *jsiiProxy_NetworkArea) GetStringMapAttribute(terraformAttribute *string
 	return returns
 }
 
+func (n *jsiiProxy_NetworkArea) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := n.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (n *jsiiProxy_NetworkArea) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -824,6 +873,17 @@ func (n *jsiiProxy_NetworkArea) InterpolationForAttribute(terraformAttribute *st
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NetworkArea) MoveTo(moveTarget *string, index interface{}) {
+	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (n *jsiiProxy_NetworkArea) OverrideLogicalId(newLogicalId *string) {

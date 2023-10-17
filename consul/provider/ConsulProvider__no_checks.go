@@ -15,6 +15,10 @@ func (c *jsiiProxy_ConsulProvider) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func validateConsulProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateConsulProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

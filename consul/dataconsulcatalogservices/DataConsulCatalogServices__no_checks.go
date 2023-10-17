@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataConsulCatalogServices) validatePutQueryOptionsParameters(
 	return nil
 }
 
+func validateDataConsulCatalogServices_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataConsulCatalogServices_IsConstructParameters(x interface{}) error {
 	return nil
 }

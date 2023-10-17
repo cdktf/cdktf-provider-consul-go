@@ -7,6 +7,10 @@ package intention
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_Intention) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Intention) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_Intention) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (i *jsiiProxy_Intention) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Intention) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_Intention) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_Intention) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIntention_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

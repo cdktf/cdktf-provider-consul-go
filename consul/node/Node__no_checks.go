@@ -7,6 +7,10 @@ package node
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_Node) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_Node) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (n *jsiiProxy_Node) validateGetStringMapAttributeParameters(terraformAttrib
 	return nil
 }
 
+func (n *jsiiProxy_Node) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_Node) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (n *jsiiProxy_Node) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_Node) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateNode_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

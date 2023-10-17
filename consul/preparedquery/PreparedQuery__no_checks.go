@@ -7,6 +7,10 @@ package preparedquery
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PreparedQuery) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PreparedQuery) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PreparedQuery) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (p *jsiiProxy_PreparedQuery) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PreparedQuery) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PreparedQuery) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (p *jsiiProxy_PreparedQuery) validatePutFailoverParameters(value *PreparedQ
 }
 
 func (p *jsiiProxy_PreparedQuery) validatePutTemplateParameters(value *PreparedQueryTemplate) error {
+	return nil
+}
+
+func validatePreparedQuery_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

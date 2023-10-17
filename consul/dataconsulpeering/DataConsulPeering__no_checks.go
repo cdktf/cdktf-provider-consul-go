@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataConsulPeering) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func validateDataConsulPeering_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataConsulPeering_IsConstructParameters(x interface{}) error {
 	return nil
 }

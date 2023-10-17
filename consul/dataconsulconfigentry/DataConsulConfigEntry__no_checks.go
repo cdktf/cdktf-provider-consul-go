@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataConsulConfigEntry) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataConsulConfigEntry_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataConsulConfigEntry_IsConstructParameters(x interface{}) error {
 	return nil
 }

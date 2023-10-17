@@ -5,9 +5,9 @@ package dataconsulnetworkareamembers
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v8/jsii"
 
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v7/dataconsulnetworkareamembers/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworkareamembers/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

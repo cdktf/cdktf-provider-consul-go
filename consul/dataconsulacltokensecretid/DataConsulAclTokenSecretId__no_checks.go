@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataConsulAclTokenSecretId) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func validateDataConsulAclTokenSecretId_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataConsulAclTokenSecretId_IsConstructParameters(x interface{}) error {
 	return nil
 }

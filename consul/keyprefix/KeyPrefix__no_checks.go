@@ -7,6 +7,10 @@ package keyprefix
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KeyPrefix) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyPrefix) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KeyPrefix) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (k *jsiiProxy_KeyPrefix) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyPrefix) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KeyPrefix) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KeyPrefix) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (k *jsiiProxy_KeyPrefix) validatePutSubkeyParameters(value interface{}) error {
+	return nil
+}
+
+func validateKeyPrefix_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package networkarea
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkArea) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkArea) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (n *jsiiProxy_NetworkArea) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (n *jsiiProxy_NetworkArea) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkArea) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (n *jsiiProxy_NetworkArea) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkArea) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateNetworkArea_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
