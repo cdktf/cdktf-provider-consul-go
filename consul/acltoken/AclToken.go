@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token consul_acl_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token consul_acl_token}.
 type AclToken interface {
 	cdktf.TerraformResource
 	AccessorId() *string
@@ -86,6 +86,8 @@ type AclToken interface {
 	RolesInput() *[]*string
 	ServiceIdentities() AclTokenServiceIdentitiesList
 	ServiceIdentitiesInput() interface{}
+	TemplatedPolicies() AclTokenTemplatedPoliciesList
+	TemplatedPoliciesInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -127,6 +129,7 @@ type AclToken interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutNodeIdentities(value interface{})
 	PutServiceIdentities(value interface{})
+	PutTemplatedPolicies(value interface{})
 	ResetAccessorId()
 	ResetDescription()
 	ResetExpirationTime()
@@ -141,6 +144,7 @@ type AclToken interface {
 	ResetPolicies()
 	ResetRoles()
 	ResetServiceIdentities()
+	ResetTemplatedPolicies()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -506,6 +510,26 @@ func (j *jsiiProxy_AclToken) ServiceIdentitiesInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AclToken) TemplatedPolicies() AclTokenTemplatedPoliciesList {
+	var returns AclTokenTemplatedPoliciesList
+	_jsii_.Get(
+		j,
+		"templatedPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclToken) TemplatedPoliciesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"templatedPoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AclToken) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -537,7 +561,7 @@ func (j *jsiiProxy_AclToken) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token consul_acl_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token consul_acl_token} Resource.
 func NewAclToken(scope constructs.Construct, id *string, config *AclTokenConfig) AclToken {
 	_init_.Initialize()
 
@@ -555,7 +579,7 @@ func NewAclToken(scope constructs.Construct, id *string, config *AclTokenConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token consul_acl_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token consul_acl_token} Resource.
 func NewAclToken_Override(a AclToken, scope constructs.Construct, id *string, config *AclTokenConfig) {
 	_init_.Initialize()
 
@@ -1073,6 +1097,17 @@ func (a *jsiiProxy_AclToken) PutServiceIdentities(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AclToken) PutTemplatedPolicies(value interface{}) {
+	if err := a.validatePutTemplatedPoliciesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTemplatedPolicies",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AclToken) ResetAccessorId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1165,6 +1200,14 @@ func (a *jsiiProxy_AclToken) ResetServiceIdentities() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetServiceIdentities",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AclToken) ResetTemplatedPolicies() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTemplatedPolicies",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_role consul_acl_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_role consul_acl_role}.
 type DataConsulAclRole interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -63,6 +63,7 @@ type DataConsulAclRole interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ServiceIdentities() DataConsulAclRoleServiceIdentitiesList
+	TemplatedPolicies() DataConsulAclRoleTemplatedPoliciesList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -345,6 +346,16 @@ func (j *jsiiProxy_DataConsulAclRole) ServiceIdentities() DataConsulAclRoleServi
 	return returns
 }
 
+func (j *jsiiProxy_DataConsulAclRole) TemplatedPolicies() DataConsulAclRoleTemplatedPoliciesList {
+	var returns DataConsulAclRoleTemplatedPoliciesList
+	_jsii_.Get(
+		j,
+		"templatedPolicies",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataConsulAclRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -376,7 +387,7 @@ func (j *jsiiProxy_DataConsulAclRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_role consul_acl_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_role consul_acl_role} Data Source.
 func NewDataConsulAclRole(scope constructs.Construct, id *string, config *DataConsulAclRoleConfig) DataConsulAclRole {
 	_init_.Initialize()
 
@@ -394,7 +405,7 @@ func NewDataConsulAclRole(scope constructs.Construct, id *string, config *DataCo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_role consul_acl_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_role consul_acl_role} Data Source.
 func NewDataConsulAclRole_Override(d DataConsulAclRole, scope constructs.Construct, id *string, config *DataConsulAclRoleConfig) {
 	_init_.Initialize()
 

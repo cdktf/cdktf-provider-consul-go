@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/agent_config consul_agent_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/agent_config consul_agent_config}.
 type DataConsulAgentConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -327,7 +327,7 @@ func (j *jsiiProxy_DataConsulAgentConfig) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/agent_config consul_agent_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/agent_config consul_agent_config} Data Source.
 func NewDataConsulAgentConfig(scope constructs.Construct, id *string, config *DataConsulAgentConfigConfig) DataConsulAgentConfig {
 	_init_.Initialize()
 
@@ -345,7 +345,7 @@ func NewDataConsulAgentConfig(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/agent_config consul_agent_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/agent_config consul_agent_config} Data Source.
 func NewDataConsulAgentConfig_Override(d DataConsulAgentConfig, scope constructs.Construct, id *string, config *DataConsulAgentConfigConfig) {
 	_init_.Initialize()
 

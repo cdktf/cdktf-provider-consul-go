@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority consul_certificate_authority}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/certificate_authority consul_certificate_authority}.
 type CertificateAuthority interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_CertificateAuthority) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority consul_certificate_authority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/certificate_authority consul_certificate_authority} Resource.
 func NewCertificateAuthority(scope constructs.Construct, id *string, config *CertificateAuthorityConfig) CertificateAuthority {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewCertificateAuthority(scope constructs.Construct, id *string, config *Cer
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority consul_certificate_authority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/certificate_authority consul_certificate_authority} Resource.
 func NewCertificateAuthority_Override(c CertificateAuthority, scope constructs.Construct, id *string, config *CertificateAuthorityConfig) {
 	_init_.Initialize()
 

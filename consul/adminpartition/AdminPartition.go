@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/admin_partition consul_admin_partition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/admin_partition consul_admin_partition}.
 type AdminPartition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_AdminPartition) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/admin_partition consul_admin_partition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/admin_partition consul_admin_partition} Resource.
 func NewAdminPartition(scope constructs.Construct, id *string, config *AdminPartitionConfig) AdminPartition {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewAdminPartition(scope constructs.Construct, id *string, config *AdminPart
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/admin_partition consul_admin_partition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/admin_partition consul_admin_partition} Resource.
 func NewAdminPartition_Override(a AdminPartition, scope constructs.Construct, id *string, config *AdminPartitionConfig) {
 	_init_.Initialize()
 

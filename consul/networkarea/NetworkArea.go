@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/network_area consul_network_area}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/network_area consul_network_area}.
 type NetworkArea interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_NetworkArea) UseTlsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/network_area consul_network_area} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/network_area consul_network_area} Resource.
 func NewNetworkArea(scope constructs.Construct, id *string, config *NetworkAreaConfig) NetworkArea {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewNetworkArea(scope constructs.Construct, id *string, config *NetworkAreaC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/network_area consul_network_area} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/network_area consul_network_area} Resource.
 func NewNetworkArea_Override(n NetworkArea, scope constructs.Construct, id *string, config *NetworkAreaConfig) {
 	_init_.Initialize()
 

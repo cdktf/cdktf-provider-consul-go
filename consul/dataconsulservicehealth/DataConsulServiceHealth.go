@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/service_health consul_service_health}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/service_health consul_service_health}.
 type DataConsulServiceHealth interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -463,7 +463,7 @@ func (j *jsiiProxy_DataConsulServiceHealth) WaitForInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/service_health consul_service_health} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/service_health consul_service_health} Data Source.
 func NewDataConsulServiceHealth(scope constructs.Construct, id *string, config *DataConsulServiceHealthConfig) DataConsulServiceHealth {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewDataConsulServiceHealth(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/service_health consul_service_health} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/service_health consul_service_health} Data Source.
 func NewDataConsulServiceHealth_Override(d DataConsulServiceHealth, scope constructs.Construct, id *string, config *DataConsulServiceHealthConfig) {
 	_init_.Initialize()
 

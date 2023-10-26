@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node consul_node}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node consul_node}.
 type Node interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -439,7 +439,7 @@ func (j *jsiiProxy_Node) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node consul_node} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node consul_node} Resource.
 func NewNode(scope constructs.Construct, id *string, config *NodeConfig) Node {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewNode(scope constructs.Construct, id *string, config *NodeConfig) Node {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node consul_node} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node consul_node} Resource.
 func NewNode_Override(n Node, scope constructs.Construct, id *string, config *NodeConfig) {
 	_init_.Initialize()
 

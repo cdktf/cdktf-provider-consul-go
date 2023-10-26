@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs consul}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs consul}.
 type ConsulProvider interface {
 	cdktf.TerraformProvider
 	Address() *string
@@ -567,7 +567,7 @@ func (j *jsiiProxy_ConsulProvider) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs consul} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs consul} Resource.
 func NewConsulProvider(scope constructs.Construct, id *string, config *ConsulProviderConfig) ConsulProvider {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewConsulProvider(scope constructs.Construct, id *string, config *ConsulPro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs consul} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs consul} Resource.
 func NewConsulProvider_Override(c ConsulProvider, scope constructs.Construct, id *string, config *ConsulProviderConfig) {
 	_init_.Initialize()
 

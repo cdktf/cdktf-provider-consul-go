@@ -75,6 +75,10 @@ func (a *jsiiProxy_AclRole) validatePutServiceIdentitiesParameters(value interfa
 	return nil
 }
 
+func (a *jsiiProxy_AclRole) validatePutTemplatedPoliciesParameters(value interface{}) error {
+	return nil
+}
+
 func validateAclRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

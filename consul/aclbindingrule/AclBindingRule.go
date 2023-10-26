@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_binding_rule consul_acl_binding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_binding_rule consul_acl_binding_rule}.
 type AclBindingRule interface {
 	cdktf.TerraformResource
 	AuthMethod() *string
@@ -24,6 +24,8 @@ type AclBindingRule interface {
 	BindType() *string
 	SetBindType(val *string)
 	BindTypeInput() *string
+	BindVars() AclBindingRuleBindVarsOutputReference
+	BindVarsInput() *AclBindingRuleBindVars
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -118,6 +120,8 @@ type AclBindingRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBindVars(value *AclBindingRuleBindVars)
+	ResetBindVars()
 	ResetDescription()
 	ResetId()
 	ResetNamespace()
@@ -196,6 +200,26 @@ func (j *jsiiProxy_AclBindingRule) BindTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"bindTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclBindingRule) BindVars() AclBindingRuleBindVarsOutputReference {
+	var returns AclBindingRuleBindVarsOutputReference
+	_jsii_.Get(
+		j,
+		"bindVars",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclBindingRule) BindVarsInput() *AclBindingRuleBindVars {
+	var returns *AclBindingRuleBindVars
+	_jsii_.Get(
+		j,
+		"bindVarsInput",
 		&returns,
 	)
 	return returns
@@ -462,7 +486,7 @@ func (j *jsiiProxy_AclBindingRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_binding_rule consul_acl_binding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_binding_rule consul_acl_binding_rule} Resource.
 func NewAclBindingRule(scope constructs.Construct, id *string, config *AclBindingRuleConfig) AclBindingRule {
 	_init_.Initialize()
 
@@ -480,7 +504,7 @@ func NewAclBindingRule(scope constructs.Construct, id *string, config *AclBindin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_binding_rule consul_acl_binding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_binding_rule consul_acl_binding_rule} Resource.
 func NewAclBindingRule_Override(a AclBindingRule, scope constructs.Construct, id *string, config *AclBindingRuleConfig) {
 	_init_.Initialize()
 
@@ -962,6 +986,25 @@ func (a *jsiiProxy_AclBindingRule) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_AclBindingRule) PutBindVars(value *AclBindingRuleBindVars) {
+	if err := a.validatePutBindVarsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putBindVars",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AclBindingRule) ResetBindVars() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBindVars",
+		nil, // no parameters
 	)
 }
 

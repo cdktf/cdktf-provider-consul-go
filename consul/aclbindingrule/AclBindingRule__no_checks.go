@@ -67,6 +67,10 @@ func (a *jsiiProxy_AclBindingRule) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (a *jsiiProxy_AclBindingRule) validatePutBindVarsParameters(value *AclBindingRuleBindVars) error {
+	return nil
+}
+
 func validateAclBindingRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
