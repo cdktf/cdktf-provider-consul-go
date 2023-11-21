@@ -1,6 +1,8 @@
-# Terraform CDK consul Provider ~> 2.16
+# Terraform CDK consul Provider tracks ~> 2.16
 
 This repo builds and publishes the Terraform consul Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on consul 2.20.0
 
 ## Available Packages
 
@@ -59,7 +61,7 @@ This project is explicitly not tracking the Terraform consul Provider version 1:
 These are the upstream dependencies:
 
 * [Terraform CDK](https://cdk.tf)
-* [Terraform consul Provider](https://registry.terraform.io/providers/hashicorp/consul/2.16.0)
+* [Terraform consul Provider](https://registry.terraform.io/providers/hashicorp/consul/2.20.0)
 
   * This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-consul/releases)
 * [Terraform Engine](https://terraform.io)

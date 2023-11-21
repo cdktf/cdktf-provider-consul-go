@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_defaults consul_config_entry_service_defaults}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_defaults consul_config_entry_service_defaults}.
 type ConfigEntryServiceDefaults interface {
 	cdktf.TerraformResource
 	BalanceInboundConnections() *string
@@ -726,7 +726,7 @@ func (j *jsiiProxy_ConfigEntryServiceDefaults) UpstreamConfigInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_defaults consul_config_entry_service_defaults} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_defaults consul_config_entry_service_defaults} Resource.
 func NewConfigEntryServiceDefaults(scope constructs.Construct, id *string, config *ConfigEntryServiceDefaultsConfig) ConfigEntryServiceDefaults {
 	_init_.Initialize()
 
@@ -744,7 +744,7 @@ func NewConfigEntryServiceDefaults(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_defaults consul_config_entry_service_defaults} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_defaults consul_config_entry_service_defaults} Resource.
 func NewConfigEntryServiceDefaults_Override(c ConfigEntryServiceDefaults, scope constructs.Construct, id *string, config *ConfigEntryServiceDefaultsConfig) {
 	_init_.Initialize()
 

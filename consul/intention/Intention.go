@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention consul_intention}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention consul_intention}.
 type Intention interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -486,7 +486,7 @@ func (j *jsiiProxy_Intention) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention consul_intention} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention consul_intention} Resource.
 func NewIntention(scope constructs.Construct, id *string, config *IntentionConfig) Intention {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewIntention(scope constructs.Construct, id *string, config *IntentionConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention consul_intention} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention consul_intention} Resource.
 func NewIntention_Override(i Intention, scope constructs.Construct, id *string, config *IntentionConfig) {
 	_init_.Initialize()
 

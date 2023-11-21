@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/key_prefix consul_key_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix consul_key_prefix}.
 type KeyPrefix interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -464,7 +464,7 @@ func (j *jsiiProxy_KeyPrefix) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/key_prefix consul_key_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix consul_key_prefix} Resource.
 func NewKeyPrefix(scope constructs.Construct, id *string, config *KeyPrefixConfig) KeyPrefix {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewKeyPrefix(scope constructs.Construct, id *string, config *KeyPrefixConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/key_prefix consul_key_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix consul_key_prefix} Resource.
 func NewKeyPrefix_Override(k KeyPrefix, scope constructs.Construct, id *string, config *KeyPrefixConfig) {
 	_init_.Initialize()
 

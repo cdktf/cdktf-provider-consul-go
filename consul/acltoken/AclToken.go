@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token consul_acl_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token consul_acl_token}.
 type AclToken interface {
 	cdktf.TerraformResource
 	AccessorId() *string
@@ -561,7 +561,7 @@ func (j *jsiiProxy_AclToken) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token consul_acl_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token consul_acl_token} Resource.
 func NewAclToken(scope constructs.Construct, id *string, config *AclTokenConfig) AclToken {
 	_init_.Initialize()
 
@@ -579,7 +579,7 @@ func NewAclToken(scope constructs.Construct, id *string, config *AclTokenConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token consul_acl_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token consul_acl_token} Resource.
 func NewAclToken_Override(a AclToken, scope constructs.Construct, id *string, config *AclTokenConfig) {
 	_init_.Initialize()
 

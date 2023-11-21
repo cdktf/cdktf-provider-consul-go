@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_splitter consul_config_entry_service_splitter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter consul_config_entry_service_splitter}.
 type ConfigEntryServiceSplitter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_ConfigEntryServiceSplitter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_splitter consul_config_entry_service_splitter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter consul_config_entry_service_splitter} Resource.
 func NewConfigEntryServiceSplitter(scope constructs.Construct, id *string, config *ConfigEntryServiceSplitterConfig) ConfigEntryServiceSplitter {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewConfigEntryServiceSplitter(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_splitter consul_config_entry_service_splitter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter consul_config_entry_service_splitter} Resource.
 func NewConfigEntryServiceSplitter_Override(c ConfigEntryServiceSplitter, scope constructs.Construct, id *string, config *ConfigEntryServiceSplitterConfig) {
 	_init_.Initialize()
 

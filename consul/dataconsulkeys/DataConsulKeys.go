@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/keys consul_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys consul_keys}.
 type DataConsulKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -30,6 +30,9 @@ type DataConsulKeys interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ErrorOnMissingKeys() interface{}
+	SetErrorOnMissingKeys(val interface{})
+	ErrorOnMissingKeysInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -98,6 +101,7 @@ type DataConsulKeys interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutKey(value interface{})
 	ResetDatacenter()
+	ResetErrorOnMissingKeys()
 	ResetId()
 	ResetKey()
 	ResetNamespace()
@@ -176,6 +180,26 @@ func (j *jsiiProxy_DataConsulKeys) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataConsulKeys) ErrorOnMissingKeys() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"errorOnMissingKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataConsulKeys) ErrorOnMissingKeysInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"errorOnMissingKeysInput",
 		&returns,
 	)
 	return returns
@@ -392,7 +416,7 @@ func (j *jsiiProxy_DataConsulKeys) Var() cdktf.StringMap {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/keys consul_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys consul_keys} Data Source.
 func NewDataConsulKeys(scope constructs.Construct, id *string, config *DataConsulKeysConfig) DataConsulKeys {
 	_init_.Initialize()
 
@@ -410,7 +434,7 @@ func NewDataConsulKeys(scope constructs.Construct, id *string, config *DataConsu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/keys consul_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys consul_keys} Data Source.
 func NewDataConsulKeys_Override(d DataConsulKeys, scope constructs.Construct, id *string, config *DataConsulKeysConfig) {
 	_init_.Initialize()
 
@@ -447,6 +471,17 @@ func (j *jsiiProxy_DataConsulKeys)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataConsulKeys)SetErrorOnMissingKeys(val interface{}) {
+	if err := j.validateSetErrorOnMissingKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"errorOnMissingKeys",
 		val,
 	)
 }
@@ -822,6 +857,14 @@ func (d *jsiiProxy_DataConsulKeys) ResetDatacenter() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDatacenter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataConsulKeys) ResetErrorOnMissingKeys() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetErrorOnMissingKeys",
 		nil, // no parameters
 	)
 }

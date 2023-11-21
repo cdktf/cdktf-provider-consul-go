@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/autopilot_health consul_autopilot_health}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/autopilot_health consul_autopilot_health}.
 type DataConsulAutopilotHealth interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -318,7 +318,7 @@ func (j *jsiiProxy_DataConsulAutopilotHealth) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/autopilot_health consul_autopilot_health} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/autopilot_health consul_autopilot_health} Data Source.
 func NewDataConsulAutopilotHealth(scope constructs.Construct, id *string, config *DataConsulAutopilotHealthConfig) DataConsulAutopilotHealth {
 	_init_.Initialize()
 
@@ -336,7 +336,7 @@ func NewDataConsulAutopilotHealth(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/autopilot_health consul_autopilot_health} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/autopilot_health consul_autopilot_health} Data Source.
 func NewDataConsulAutopilotHealth_Override(d DataConsulAutopilotHealth, scope constructs.Construct, id *string, config *DataConsulAutopilotHealthConfig) {
 	_init_.Initialize()
 

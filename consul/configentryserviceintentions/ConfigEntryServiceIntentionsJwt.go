@@ -7,7 +7,7 @@ package configentryserviceintentions
 type ConfigEntryServiceIntentionsJwt struct {
 	// providers block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#providers ConfigEntryServiceIntentions#providers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#providers ConfigEntryServiceIntentions#providers}
 	Providers interface{} `field:"optional" json:"providers" yaml:"providers"`
 }
 

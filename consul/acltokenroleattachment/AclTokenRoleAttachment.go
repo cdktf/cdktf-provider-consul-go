@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment}.
 type AclTokenRoleAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_AclTokenRoleAttachment) TokenIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment} Resource.
 func NewAclTokenRoleAttachment(scope constructs.Construct, id *string, config *AclTokenRoleAttachmentConfig) AclTokenRoleAttachment {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewAclTokenRoleAttachment(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment} Resource.
 func NewAclTokenRoleAttachment_Override(a AclTokenRoleAttachment, scope constructs.Construct, id *string, config *AclTokenRoleAttachmentConfig) {
 	_init_.Initialize()
 

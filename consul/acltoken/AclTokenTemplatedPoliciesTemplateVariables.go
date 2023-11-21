@@ -7,7 +7,7 @@ package acltoken
 type AclTokenTemplatedPoliciesTemplateVariables struct {
 	// The name of node, workload identity or service.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#name AclToken#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#name AclToken#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

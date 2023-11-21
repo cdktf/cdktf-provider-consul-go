@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataConsulKeys) validateSetDatacenterParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataConsulKeys) validateSetErrorOnMissingKeysParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataConsulKeys) validateSetIdParameters(val *string) error {
 	return nil
 }

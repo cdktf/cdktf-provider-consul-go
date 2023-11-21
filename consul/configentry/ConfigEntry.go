@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry consul_config_entry}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry consul_config_entry}.
 type ConfigEntry interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_ConfigEntry) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry consul_config_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry consul_config_entry} Resource.
 func NewConfigEntry(scope constructs.Construct, id *string, config *ConfigEntryConfig) ConfigEntry {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewConfigEntry(scope constructs.Construct, id *string, config *ConfigEntryC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry consul_config_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry consul_config_entry} Resource.
 func NewConfigEntry_Override(c ConfigEntry, scope constructs.Construct, id *string, config *ConfigEntryConfig) {
 	_init_.Initialize()
 

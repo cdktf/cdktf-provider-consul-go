@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router consul_config_entry_service_router}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router consul_config_entry_service_router}.
 type ConfigEntryServiceRouter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_ConfigEntryServiceRouter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router consul_config_entry_service_router} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router consul_config_entry_service_router} Resource.
 func NewConfigEntryServiceRouter(scope constructs.Construct, id *string, config *ConfigEntryServiceRouterConfig) ConfigEntryServiceRouter {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewConfigEntryServiceRouter(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router consul_config_entry_service_router} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router consul_config_entry_service_router} Resource.
 func NewConfigEntryServiceRouter_Override(c ConfigEntryServiceRouter, scope constructs.Construct, id *string, config *ConfigEntryServiceRouterConfig) {
 	_init_.Initialize()
 
