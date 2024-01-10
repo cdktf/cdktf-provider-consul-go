@@ -7,6 +7,10 @@ package dataconsulaclrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataConsulAclRoleTemplatedPoliciesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataConsulAclRoleTemplatedPoliciesList) validateGetParameters(index *float64) error {
 	return nil
 }

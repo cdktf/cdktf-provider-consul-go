@@ -5,10 +5,10 @@ package licenseresource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v8/licenseresource/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v9/licenseresource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -104,12 +104,22 @@ type LicenseResource interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -119,6 +129,9 @@ type LicenseResource interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -853,6 +866,19 @@ func (l *jsiiProxy_LicenseResource) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (l *jsiiProxy_LicenseResource) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (l *jsiiProxy_LicenseResource) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -880,6 +906,17 @@ func (l *jsiiProxy_LicenseResource) InterpolationForAttribute(terraformAttribute
 	return returns
 }
 
+func (l *jsiiProxy_LicenseResource) MoveFromId(id *string) {
+	if err := l.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (l *jsiiProxy_LicenseResource) MoveTo(moveTarget *string, index interface{}) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -888,6 +925,17 @@ func (l *jsiiProxy_LicenseResource) MoveTo(moveTarget *string, index interface{}
 		l,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (l *jsiiProxy_LicenseResource) MoveToId(id *string) {
+	if err := l.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -932,6 +980,32 @@ func (l *jsiiProxy_LicenseResource) SynthesizeAttributes() *map[string]interface
 	_jsii_.Invoke(
 		l,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LicenseResource) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		l,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LicenseResource) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

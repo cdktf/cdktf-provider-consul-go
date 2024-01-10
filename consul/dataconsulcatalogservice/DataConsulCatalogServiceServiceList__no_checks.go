@@ -7,6 +7,10 @@ package dataconsulcatalogservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataConsulCatalogServiceServiceList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataConsulCatalogServiceServiceList) validateGetParameters(index *float64) error {
 	return nil
 }

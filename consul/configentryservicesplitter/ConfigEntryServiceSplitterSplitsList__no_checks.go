@@ -7,6 +7,10 @@ package configentryservicesplitter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConfigEntryServiceSplitterSplitsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigEntryServiceSplitterSplitsList) validateGetParameters(index *float64) error {
 	return nil
 }

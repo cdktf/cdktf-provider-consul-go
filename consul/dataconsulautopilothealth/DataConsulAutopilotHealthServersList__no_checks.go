@@ -7,6 +7,10 @@ package dataconsulautopilothealth
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataConsulAutopilotHealthServersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataConsulAutopilotHealthServersList) validateGetParameters(index *float64) error {
 	return nil
 }

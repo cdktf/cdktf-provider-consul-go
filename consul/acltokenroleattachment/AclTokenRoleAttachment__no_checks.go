@@ -59,7 +59,15 @@ func (a *jsiiProxy_AclTokenRoleAttachment) validateInterpolationForAttributePara
 	return nil
 }
 
+func (a *jsiiProxy_AclTokenRoleAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AclTokenRoleAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AclTokenRoleAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

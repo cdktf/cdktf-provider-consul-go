@@ -59,7 +59,15 @@ func (a *jsiiProxy_AclTokenPolicyAttachment) validateInterpolationForAttributePa
 	return nil
 }
 
+func (a *jsiiProxy_AclTokenPolicyAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AclTokenPolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AclTokenPolicyAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

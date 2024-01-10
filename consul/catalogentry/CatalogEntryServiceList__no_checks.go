@@ -7,6 +7,10 @@ package catalogentry
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CatalogEntryServiceList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CatalogEntryServiceList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package configentryserviceintentions
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConfigEntryServiceIntentionsSourcesPermissionsHttpHeadersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigEntryServiceIntentionsSourcesPermissionsHttpHeadersList) validateGetParameters(index *float64) error {
 	return nil
 }

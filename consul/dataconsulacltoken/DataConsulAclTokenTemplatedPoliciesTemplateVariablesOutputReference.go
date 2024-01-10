@@ -5,9 +5,9 @@ package dataconsulacltoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulacltoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

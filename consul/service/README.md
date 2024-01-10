@@ -1,3 +1,3 @@
 # `consul_service`
 
-Refer to the Terraform Registory for docs: [`consul_service`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/service).
+Refer to the Terraform Registry for docs: [`consul_service`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/service).

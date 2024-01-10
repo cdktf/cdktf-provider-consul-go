@@ -59,7 +59,15 @@ func (i *jsiiProxy_Intention) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (i *jsiiProxy_Intention) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Intention) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_Intention) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

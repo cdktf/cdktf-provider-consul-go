@@ -59,7 +59,15 @@ func (a *jsiiProxy_AdminPartition) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AdminPartition) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AdminPartition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AdminPartition) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

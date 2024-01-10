@@ -7,6 +7,10 @@ package aclrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AclRoleServiceIdentitiesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AclRoleServiceIdentitiesList) validateGetParameters(index *float64) error {
 	return nil
 }
