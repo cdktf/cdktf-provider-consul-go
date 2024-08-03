@@ -123,6 +123,10 @@ func (j *jsiiProxy_PeeringToken) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_PeeringToken) validateSetServerExternalAddressesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewPeeringTokenParameters(scope constructs.Construct, id *string, config *PeeringTokenConfig) error {
 	return nil
 }

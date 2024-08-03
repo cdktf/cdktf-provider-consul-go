@@ -1,12 +1,15 @@
-# CDKTF Go bindings for hashicorp/consul provider version 2.20.0
+# CDKTF Go bindings for hashicorp/consul provider version 2.21.0
 
-This repo builds and publishes the [Terraform consul provider](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform consul provider](https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-consul-go`](https://github.com/cdktf/cdktf-provider-consul-go) package.
 
-`go get github.com/cdktf/cdktf-provider-consul-go/consul`
+`go get github.com/cdktf/cdktf-provider-consul-go/consul/<version>`
+
+Where `<version>` is the version of the prebuilt provider you would like to use e.g. `v11`. The full module name can be found
+within the [go.mod](https://github.com/cdktf/cdktf-provider-consul-go/blob/main/consul/go.mod#L1) file.
 
 ## Docs
 
@@ -20,7 +23,7 @@ This project is explicitly not tracking the Terraform consul provider version 1:
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform consul provider](https://registry.terraform.io/providers/hashicorp/consul/2.20.0)
+* [Terraform consul provider](https://registry.terraform.io/providers/hashicorp/consul/2.21.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

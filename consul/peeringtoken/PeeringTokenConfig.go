@@ -26,9 +26,9 @@ type PeeringTokenConfig struct {
 	//
 	// The `peer_name` is used to reference the peer cluster in service discovery queries and configuration entries such as `service-intentions`. This field must be a valid DNS hostname label.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering_token#peer_name PeeringToken#peer_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#peer_name PeeringToken#peer_name}
 	PeerName *string `field:"required" json:"peerName" yaml:"peerName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering_token#id PeeringToken#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#id PeeringToken#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,9 +37,15 @@ type PeeringTokenConfig struct {
 	//
 	// This parameter is not required and does not directly impact the cluster peering process.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering_token#meta PeeringToken#meta}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#meta PeeringToken#meta}
 	Meta *map[string]*string `field:"optional" json:"meta" yaml:"meta"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering_token#partition PeeringToken#partition}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#partition PeeringToken#partition}.
 	Partition *string `field:"optional" json:"partition" yaml:"partition"`
+	// The addresses for the cluster that generates the peering token.
+	//
+	// Addresses take the form {host or IP}:port. You can specify one or more load balancers or external IPs that route external traffic to this cluster's Consul servers.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#server_external_addresses PeeringToken#server_external_addresses}
+	ServerExternalAddresses *[]*string `field:"optional" json:"serverExternalAddresses" yaml:"serverExternalAddresses"`
 }
 

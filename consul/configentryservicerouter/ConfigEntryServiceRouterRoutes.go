@@ -7,11 +7,11 @@ package configentryservicerouter
 type ConfigEntryServiceRouterRoutes struct {
 	// destination block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#destination ConfigEntryServiceRouter#destination}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_router#destination ConfigEntryServiceRouter#destination}
 	Destination *ConfigEntryServiceRouterRoutesDestination `field:"optional" json:"destination" yaml:"destination"`
 	// match block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#match ConfigEntryServiceRouter#match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_router#match ConfigEntryServiceRouter#match}
 	Match *ConfigEntryServiceRouterRoutesMatch `field:"optional" json:"match" yaml:"match"`
 }
 

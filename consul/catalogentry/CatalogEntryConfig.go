@@ -22,22 +22,22 @@ type CatalogEntryConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#address CatalogEntry#address}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/catalog_entry#address CatalogEntry#address}.
 	Address *string `field:"required" json:"address" yaml:"address"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#node CatalogEntry#node}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/catalog_entry#node CatalogEntry#node}.
 	NodeAttribute *string `field:"required" json:"nodeAttribute" yaml:"nodeAttribute"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#datacenter CatalogEntry#datacenter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/catalog_entry#datacenter CatalogEntry#datacenter}.
 	Datacenter *string `field:"optional" json:"datacenter" yaml:"datacenter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#id CatalogEntry#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/catalog_entry#id CatalogEntry#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// service block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#service CatalogEntry#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/catalog_entry#service CatalogEntry#service}
 	Service interface{} `field:"optional" json:"service" yaml:"service"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#token CatalogEntry#token}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/catalog_entry#token CatalogEntry#token}.
 	Token *string `field:"optional" json:"token" yaml:"token"`
 }
 

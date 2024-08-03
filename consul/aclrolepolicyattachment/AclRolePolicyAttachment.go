@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_role_policy_attachment consul_acl_role_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role_policy_attachment consul_acl_role_policy_attachment}.
 type AclRolePolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_AclRolePolicyAttachment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_role_policy_attachment consul_acl_role_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role_policy_attachment consul_acl_role_policy_attachment} Resource.
 func NewAclRolePolicyAttachment(scope constructs.Construct, id *string, config *AclRolePolicyAttachmentConfig) AclRolePolicyAttachment {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewAclRolePolicyAttachment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_role_policy_attachment consul_acl_role_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role_policy_attachment consul_acl_role_policy_attachment} Resource.
 func NewAclRolePolicyAttachment_Override(a AclRolePolicyAttachment, scope constructs.Construct, id *string, config *AclRolePolicyAttachmentConfig) {
 	_init_.Initialize()
 

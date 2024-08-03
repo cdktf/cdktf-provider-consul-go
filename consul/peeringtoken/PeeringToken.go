@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering_token consul_peering_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token consul_peering_token}.
 type PeeringToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -68,6 +68,9 @@ type PeeringToken interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ServerExternalAddresses() *[]*string
+	SetServerExternalAddresses(val *[]*string)
+	ServerExternalAddressesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -123,6 +126,7 @@ type PeeringToken interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPartition()
+	ResetServerExternalAddresses()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -361,6 +365,26 @@ func (j *jsiiProxy_PeeringToken) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PeeringToken) ServerExternalAddresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"serverExternalAddresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PeeringToken) ServerExternalAddressesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"serverExternalAddressesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PeeringToken) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -392,7 +416,7 @@ func (j *jsiiProxy_PeeringToken) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering_token consul_peering_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token consul_peering_token} Resource.
 func NewPeeringToken(scope constructs.Construct, id *string, config *PeeringTokenConfig) PeeringToken {
 	_init_.Initialize()
 
@@ -410,7 +434,7 @@ func NewPeeringToken(scope constructs.Construct, id *string, config *PeeringToke
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering_token consul_peering_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token consul_peering_token} Resource.
 func NewPeeringToken_Override(p PeeringToken, scope constructs.Construct, id *string, config *PeeringTokenConfig) {
 	_init_.Initialize()
 
@@ -529,6 +553,17 @@ func (j *jsiiProxy_PeeringToken)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PeeringToken)SetServerExternalAddresses(val *[]*string) {
+	if err := j.validateSetServerExternalAddressesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverExternalAddresses",
 		val,
 	)
 }
@@ -914,6 +949,14 @@ func (p *jsiiProxy_PeeringToken) ResetPartition() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPartition",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PeeringToken) ResetServerExternalAddresses() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetServerExternalAddresses",
 		nil, // no parameters
 	)
 }
