@@ -5,10 +5,10 @@ package configentryserviceresolver
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-consul-go/consul/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-consul-go/consul/v9/configentryserviceresolver/internal"
+	"github.com/cdktf/cdktf-provider-consul-go/consul/v10/configentryserviceresolver/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
