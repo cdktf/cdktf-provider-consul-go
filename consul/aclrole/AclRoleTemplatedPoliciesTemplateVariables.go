@@ -7,7 +7,7 @@ package aclrole
 type AclRoleTemplatedPoliciesTemplateVariables struct {
 	// The name of node, workload identity or service.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#name AclRole#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#name AclRole#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

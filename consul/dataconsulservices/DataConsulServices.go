@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/services consul_services}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/services consul_services}.
 type DataConsulServices interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataConsulServices) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/services consul_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/services consul_services} Data Source.
 func NewDataConsulServices(scope constructs.Construct, id *string, config *DataConsulServicesConfig) DataConsulServices {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataConsulServices(scope constructs.Construct, id *string, config *DataC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/services consul_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/services consul_services} Data Source.
 func NewDataConsulServices_Override(d DataConsulServices, scope constructs.Construct, id *string, config *DataConsulServicesConfig) {
 	_init_.Initialize()
 

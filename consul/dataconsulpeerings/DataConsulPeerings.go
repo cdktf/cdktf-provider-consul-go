@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/peerings consul_peerings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/peerings consul_peerings}.
 type DataConsulPeerings interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataConsulPeerings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/peerings consul_peerings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/peerings consul_peerings} Data Source.
 func NewDataConsulPeerings(scope constructs.Construct, id *string, config *DataConsulPeeringsConfig) DataConsulPeerings {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataConsulPeerings(scope constructs.Construct, id *string, config *DataC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/peerings consul_peerings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/peerings consul_peerings} Data Source.
 func NewDataConsulPeerings_Override(d DataConsulPeerings, scope constructs.Construct, id *string, config *DataConsulPeeringsConfig) {
 	_init_.Initialize()
 

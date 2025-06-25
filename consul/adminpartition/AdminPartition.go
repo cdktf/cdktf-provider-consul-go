@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/admin_partition consul_admin_partition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/admin_partition consul_admin_partition}.
 type AdminPartition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,9 @@ type AdminPartition interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableGossip() interface{}
+	SetDisableGossip(val interface{})
+	DisableGossipInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -114,6 +117,7 @@ type AdminPartition interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
+	ResetDisableGossip()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -201,6 +205,26 @@ func (j *jsiiProxy_AdminPartition) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdminPartition) DisableGossip() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableGossip",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdminPartition) DisableGossipInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableGossipInput",
 		&returns,
 	)
 	return returns
@@ -357,7 +381,7 @@ func (j *jsiiProxy_AdminPartition) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/admin_partition consul_admin_partition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/admin_partition consul_admin_partition} Resource.
 func NewAdminPartition(scope constructs.Construct, id *string, config *AdminPartitionConfig) AdminPartition {
 	_init_.Initialize()
 
@@ -375,7 +399,7 @@ func NewAdminPartition(scope constructs.Construct, id *string, config *AdminPart
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/admin_partition consul_admin_partition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/admin_partition consul_admin_partition} Resource.
 func NewAdminPartition_Override(a AdminPartition, scope constructs.Construct, id *string, config *AdminPartitionConfig) {
 	_init_.Initialize()
 
@@ -423,6 +447,17 @@ func (j *jsiiProxy_AdminPartition)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AdminPartition)SetDisableGossip(val interface{}) {
+	if err := j.validateSetDisableGossipParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableGossip",
 		val,
 	)
 }
@@ -844,6 +879,14 @@ func (a *jsiiProxy_AdminPartition) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AdminPartition) ResetDisableGossip() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDisableGossip",
 		nil, // no parameters
 	)
 }

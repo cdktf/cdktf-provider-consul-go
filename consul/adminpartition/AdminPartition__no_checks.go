@@ -103,6 +103,10 @@ func (j *jsiiProxy_AdminPartition) validateSetDescriptionParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_AdminPartition) validateSetDisableGossipParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdminPartition) validateSetIdParameters(val *string) error {
 	return nil
 }

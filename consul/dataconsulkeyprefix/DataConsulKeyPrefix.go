@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix consul_key_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/key_prefix consul_key_prefix}.
 type DataConsulKeyPrefix interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -430,7 +430,7 @@ func (j *jsiiProxy_DataConsulKeyPrefix) Var() cdktf.StringMap {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix consul_key_prefix} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/key_prefix consul_key_prefix} Data Source.
 func NewDataConsulKeyPrefix(scope constructs.Construct, id *string, config *DataConsulKeyPrefixConfig) DataConsulKeyPrefix {
 	_init_.Initialize()
 
@@ -448,7 +448,7 @@ func NewDataConsulKeyPrefix(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix consul_key_prefix} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/key_prefix consul_key_prefix} Data Source.
 func NewDataConsulKeyPrefix_Override(d DataConsulKeyPrefix, scope constructs.Construct, id *string, config *DataConsulKeyPrefixConfig) {
 	_init_.Initialize()
 

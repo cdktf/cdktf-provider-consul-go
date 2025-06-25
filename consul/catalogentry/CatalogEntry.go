@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/catalog_entry consul_catalog_entry}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/catalog_entry consul_catalog_entry}.
 type CatalogEntry interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -428,7 +428,7 @@ func (j *jsiiProxy_CatalogEntry) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/catalog_entry consul_catalog_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/catalog_entry consul_catalog_entry} Resource.
 func NewCatalogEntry(scope constructs.Construct, id *string, config *CatalogEntryConfig) CatalogEntry {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewCatalogEntry(scope constructs.Construct, id *string, config *CatalogEntr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/catalog_entry consul_catalog_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/catalog_entry consul_catalog_entry} Resource.
 func NewCatalogEntry_Override(c CatalogEntry, scope constructs.Construct, id *string, config *CatalogEntryConfig) {
 	_init_.Initialize()
 

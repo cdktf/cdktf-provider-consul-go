@@ -163,6 +163,10 @@ func (j *jsiiProxy_Service) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Service) validateSetWeightsParameters(val *map[string]*float64) error {
+	return nil
+}
+
 func validateNewServiceParameters(scope constructs.Construct, id *string, config *ServiceConfig) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service consul_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service consul_service}.
 type Service interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -102,6 +102,9 @@ type Service interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Weights() *map[string]*float64
+	SetWeights(val *map[string]*float64)
+	WeightsInput() *map[string]*float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -161,6 +164,7 @@ type Service interface {
 	ResetPort()
 	ResetServiceId()
 	ResetTags()
+	ResetWeights()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -619,8 +623,28 @@ func (j *jsiiProxy_Service) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Service) Weights() *map[string]*float64 {
+	var returns *map[string]*float64
+	_jsii_.Get(
+		j,
+		"weights",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service consul_service} Resource.
+func (j *jsiiProxy_Service) WeightsInput() *map[string]*float64 {
+	var returns *map[string]*float64
+	_jsii_.Get(
+		j,
+		"weightsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service consul_service} Resource.
 func NewService(scope constructs.Construct, id *string, config *ServiceConfig) Service {
 	_init_.Initialize()
 
@@ -638,7 +662,7 @@ func NewService(scope constructs.Construct, id *string, config *ServiceConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service consul_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service consul_service} Resource.
 func NewService_Override(s Service, scope constructs.Construct, id *string, config *ServiceConfig) {
 	_init_.Initialize()
 
@@ -856,6 +880,17 @@ func (j *jsiiProxy_Service)SetTags(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Service)SetWeights(val *map[string]*float64) {
+	if err := j.validateSetWeightsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"weights",
 		val,
 	)
 }
@@ -1324,6 +1359,14 @@ func (s *jsiiProxy_Service) ResetTags() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Service) ResetWeights() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetWeights",
 		nil, // no parameters
 	)
 }
