@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/license consul_license}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/license consul_license}.
 type LicenseResource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -467,7 +467,7 @@ func (j *jsiiProxy_LicenseResource) Warnings() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/license consul_license} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/license consul_license} Resource.
 func NewLicenseResource(scope constructs.Construct, id *string, config *LicenseResourceConfig) LicenseResource {
 	_init_.Initialize()
 
@@ -485,7 +485,7 @@ func NewLicenseResource(scope constructs.Construct, id *string, config *LicenseR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/license consul_license} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/license consul_license} Resource.
 func NewLicenseResource_Override(l LicenseResource, scope constructs.Construct, id *string, config *LicenseResourceConfig) {
 	_init_.Initialize()
 

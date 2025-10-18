@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/acl_policy consul_acl_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/data-sources/acl_policy consul_acl_policy}.
 type DataConsulAclPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -369,7 +369,7 @@ func (j *jsiiProxy_DataConsulAclPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/acl_policy consul_acl_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/data-sources/acl_policy consul_acl_policy} Data Source.
 func NewDataConsulAclPolicy(scope constructs.Construct, id *string, config *DataConsulAclPolicyConfig) DataConsulAclPolicy {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewDataConsulAclPolicy(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/acl_policy consul_acl_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/data-sources/acl_policy consul_acl_policy} Data Source.
 func NewDataConsulAclPolicy_Override(d DataConsulAclPolicy, scope constructs.Construct, id *string, config *DataConsulAclPolicyConfig) {
 	_init_.Initialize()
 

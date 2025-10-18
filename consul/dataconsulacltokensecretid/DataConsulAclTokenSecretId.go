@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/acl_token_secret_id consul_acl_token_secret_id}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/data-sources/acl_token_secret_id consul_acl_token_secret_id}.
 type DataConsulAclTokenSecretId interface {
 	cdktf.TerraformDataSource
 	AccessorId() *string
@@ -382,7 +382,7 @@ func (j *jsiiProxy_DataConsulAclTokenSecretId) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/acl_token_secret_id consul_acl_token_secret_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/data-sources/acl_token_secret_id consul_acl_token_secret_id} Data Source.
 func NewDataConsulAclTokenSecretId(scope constructs.Construct, id *string, config *DataConsulAclTokenSecretIdConfig) DataConsulAclTokenSecretId {
 	_init_.Initialize()
 
@@ -400,7 +400,7 @@ func NewDataConsulAclTokenSecretId(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/acl_token_secret_id consul_acl_token_secret_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/data-sources/acl_token_secret_id consul_acl_token_secret_id} Data Source.
 func NewDataConsulAclTokenSecretId_Override(d DataConsulAclTokenSecretId, scope constructs.Construct, id *string, config *DataConsulAclTokenSecretIdConfig) {
 	_init_.Initialize()
 

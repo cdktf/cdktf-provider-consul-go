@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query consul_prepared_query}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/prepared_query consul_prepared_query}.
 type PreparedQuery interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -692,7 +692,7 @@ func (j *jsiiProxy_PreparedQuery) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query consul_prepared_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/prepared_query consul_prepared_query} Resource.
 func NewPreparedQuery(scope constructs.Construct, id *string, config *PreparedQueryConfig) PreparedQuery {
 	_init_.Initialize()
 
@@ -710,7 +710,7 @@ func NewPreparedQuery(scope constructs.Construct, id *string, config *PreparedQu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query consul_prepared_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/prepared_query consul_prepared_query} Resource.
 func NewPreparedQuery_Override(p PreparedQuery, scope constructs.Construct, id *string, config *PreparedQueryConfig) {
 	_init_.Initialize()
 

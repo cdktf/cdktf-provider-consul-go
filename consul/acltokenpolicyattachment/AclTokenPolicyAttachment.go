@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token_policy_attachment consul_acl_token_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token_policy_attachment consul_acl_token_policy_attachment}.
 type AclTokenPolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_AclTokenPolicyAttachment) TokenIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token_policy_attachment consul_acl_token_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token_policy_attachment consul_acl_token_policy_attachment} Resource.
 func NewAclTokenPolicyAttachment(scope constructs.Construct, id *string, config *AclTokenPolicyAttachmentConfig) AclTokenPolicyAttachment {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewAclTokenPolicyAttachment(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token_policy_attachment consul_acl_token_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token_policy_attachment consul_acl_token_policy_attachment} Resource.
 func NewAclTokenPolicyAttachment_Override(a AclTokenPolicyAttachment, scope constructs.Construct, id *string, config *AclTokenPolicyAttachmentConfig) {
 	_init_.Initialize()
 

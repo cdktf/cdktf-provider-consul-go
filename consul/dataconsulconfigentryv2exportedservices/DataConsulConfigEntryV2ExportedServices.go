@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/config_entry_v2_exported_services consul_config_entry_v2_exported_services}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/data-sources/config_entry_v2_exported_services consul_config_entry_v2_exported_services}.
 type DataConsulConfigEntryV2ExportedServices interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -455,7 +455,7 @@ func (j *jsiiProxy_DataConsulConfigEntryV2ExportedServices) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/config_entry_v2_exported_services consul_config_entry_v2_exported_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/data-sources/config_entry_v2_exported_services consul_config_entry_v2_exported_services} Data Source.
 func NewDataConsulConfigEntryV2ExportedServices(scope constructs.Construct, id *string, config *DataConsulConfigEntryV2ExportedServicesConfig) DataConsulConfigEntryV2ExportedServices {
 	_init_.Initialize()
 
@@ -473,7 +473,7 @@ func NewDataConsulConfigEntryV2ExportedServices(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/config_entry_v2_exported_services consul_config_entry_v2_exported_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/data-sources/config_entry_v2_exported_services consul_config_entry_v2_exported_services} Data Source.
 func NewDataConsulConfigEntryV2ExportedServices_Override(d DataConsulConfigEntryV2ExportedServices, scope constructs.Construct, id *string, config *DataConsulConfigEntryV2ExportedServicesConfig) {
 	_init_.Initialize()
 

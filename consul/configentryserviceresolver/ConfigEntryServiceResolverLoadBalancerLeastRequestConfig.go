@@ -5,7 +5,7 @@ package configentryserviceresolver
 
 
 type ConfigEntryServiceResolverLoadBalancerLeastRequestConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/config_entry_service_resolver#choice_count ConfigEntryServiceResolver#choice_count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/config_entry_service_resolver#choice_count ConfigEntryServiceResolver#choice_count}.
 	ChoiceCount *float64 `field:"optional" json:"choiceCount" yaml:"choiceCount"`
 }
 

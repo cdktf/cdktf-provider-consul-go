@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/acl_auth_method consul_acl_auth_method}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/data-sources/acl_auth_method consul_acl_auth_method}.
 type DataConsulAclAuthMethod interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -424,7 +424,7 @@ func (j *jsiiProxy_DataConsulAclAuthMethod) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/acl_auth_method consul_acl_auth_method} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/data-sources/acl_auth_method consul_acl_auth_method} Data Source.
 func NewDataConsulAclAuthMethod(scope constructs.Construct, id *string, config *DataConsulAclAuthMethodConfig) DataConsulAclAuthMethod {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewDataConsulAclAuthMethod(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/acl_auth_method consul_acl_auth_method} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/data-sources/acl_auth_method consul_acl_auth_method} Data Source.
 func NewDataConsulAclAuthMethod_Override(d DataConsulAclAuthMethod, scope constructs.Construct, id *string, config *DataConsulAclAuthMethodConfig) {
 	_init_.Initialize()
 

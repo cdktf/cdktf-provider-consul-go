@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/keys consul_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/keys consul_keys}.
 type Keys interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_Keys) Var() cdktf.StringMap {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/keys consul_keys} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/keys consul_keys} Resource.
 func NewKeys(scope constructs.Construct, id *string, config *KeysConfig) Keys {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewKeys(scope constructs.Construct, id *string, config *KeysConfig) Keys {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/keys consul_keys} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/keys consul_keys} Resource.
 func NewKeys_Override(k Keys, scope constructs.Construct, id *string, config *KeysConfig) {
 	_init_.Initialize()
 

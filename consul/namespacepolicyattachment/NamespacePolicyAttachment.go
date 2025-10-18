@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/namespace_policy_attachment consul_namespace_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/namespace_policy_attachment consul_namespace_policy_attachment}.
 type NamespacePolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_NamespacePolicyAttachment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/namespace_policy_attachment consul_namespace_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/namespace_policy_attachment consul_namespace_policy_attachment} Resource.
 func NewNamespacePolicyAttachment(scope constructs.Construct, id *string, config *NamespacePolicyAttachmentConfig) NamespacePolicyAttachment {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewNamespacePolicyAttachment(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/namespace_policy_attachment consul_namespace_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/namespace_policy_attachment consul_namespace_policy_attachment} Resource.
 func NewNamespacePolicyAttachment_Override(n NamespacePolicyAttachment, scope constructs.Construct, id *string, config *NamespacePolicyAttachmentConfig) {
 	_init_.Initialize()
 
