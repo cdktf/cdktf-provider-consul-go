@@ -43,7 +43,7 @@ func (c *jsiiProxy_ConfigEntryServiceRouterRoutesMatchOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceRouterRoutesMatchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigEntryServiceRouterRoutesMatchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ConfigEntryServiceRouterRoutesMatchOutputReference) validateP
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceRouterRoutesMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceRouterRoutesMatchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

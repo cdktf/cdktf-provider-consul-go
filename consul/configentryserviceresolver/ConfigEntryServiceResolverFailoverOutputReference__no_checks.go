@@ -43,7 +43,7 @@ func (c *jsiiProxy_ConfigEntryServiceResolverFailoverOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceResolverFailoverOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigEntryServiceResolverFailoverOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ConfigEntryServiceResolverFailoverOutputReference) validatePu
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceResolverFailoverOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceResolverFailoverOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

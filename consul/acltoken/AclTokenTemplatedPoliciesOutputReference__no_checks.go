@@ -43,7 +43,7 @@ func (a *jsiiProxy_AclTokenTemplatedPoliciesOutputReference) validateGetStringMa
 	return nil
 }
 
-func (a *jsiiProxy_AclTokenTemplatedPoliciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AclTokenTemplatedPoliciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AclTokenTemplatedPoliciesOutputReference) validatePutTemplate
 	return nil
 }
 
-func (a *jsiiProxy_AclTokenTemplatedPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AclTokenTemplatedPoliciesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

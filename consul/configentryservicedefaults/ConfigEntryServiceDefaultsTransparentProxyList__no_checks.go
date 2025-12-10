@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigEntryServiceDefaultsTransparentProxyList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceDefaultsTransparentProxyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceDefaultsTransparentProxyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

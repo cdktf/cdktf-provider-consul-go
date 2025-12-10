@@ -43,7 +43,7 @@ func (p *jsiiProxy_PreparedQueryFailoverOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (p *jsiiProxy_PreparedQueryFailoverOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PreparedQueryFailoverOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PreparedQueryFailoverOutputReference) validatePutTargetsParam
 	return nil
 }
 
-func (p *jsiiProxy_PreparedQueryFailoverOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PreparedQueryFailoverOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

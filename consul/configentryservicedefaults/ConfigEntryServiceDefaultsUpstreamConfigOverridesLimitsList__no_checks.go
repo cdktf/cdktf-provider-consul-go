@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigOverridesLimitsList) 
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigOverridesLimitsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigOverridesLimitsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

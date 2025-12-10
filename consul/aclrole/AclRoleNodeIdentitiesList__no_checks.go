@@ -15,7 +15,7 @@ func (a *jsiiProxy_AclRoleNodeIdentitiesList) validateGetParameters(index *float
 	return nil
 }
 
-func (a *jsiiProxy_AclRoleNodeIdentitiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AclRoleNodeIdentitiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

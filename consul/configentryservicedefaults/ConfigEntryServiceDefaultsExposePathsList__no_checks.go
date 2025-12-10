@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigEntryServiceDefaultsExposePathsList) validateGetParamet
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceDefaultsExposePathsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceDefaultsExposePathsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

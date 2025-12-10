@@ -15,7 +15,7 @@ func (k *jsiiProxy_KeyPrefixSubkeyList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (k *jsiiProxy_KeyPrefixSubkeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyPrefixSubkeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

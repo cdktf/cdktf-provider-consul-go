@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigEntryServiceDefaultsEnvoyExtensionsList) validateGetPar
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceDefaultsEnvoyExtensionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceDefaultsEnvoyExtensionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

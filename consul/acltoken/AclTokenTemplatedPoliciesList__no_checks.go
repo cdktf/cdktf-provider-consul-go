@@ -15,7 +15,7 @@ func (a *jsiiProxy_AclTokenTemplatedPoliciesList) validateGetParameters(index *f
 	return nil
 }
 
-func (a *jsiiProxy_AclTokenTemplatedPoliciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AclTokenTemplatedPoliciesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

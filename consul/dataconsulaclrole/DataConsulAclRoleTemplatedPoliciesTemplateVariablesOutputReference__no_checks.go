@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataConsulAclRoleTemplatedPoliciesTemplateVariablesOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataConsulAclRoleTemplatedPoliciesTemplateVariablesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataConsulAclRoleTemplatedPoliciesTemplateVariablesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataConsulAclRoleTemplatedPoliciesTemplateVariablesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataConsulAclRoleTemplatedPoliciesTemplateVariablesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

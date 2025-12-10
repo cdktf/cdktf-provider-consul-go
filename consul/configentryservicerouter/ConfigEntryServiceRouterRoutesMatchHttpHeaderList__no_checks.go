@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigEntryServiceRouterRoutesMatchHttpHeaderList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceRouterRoutesMatchHttpHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceRouterRoutesMatchHttpHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

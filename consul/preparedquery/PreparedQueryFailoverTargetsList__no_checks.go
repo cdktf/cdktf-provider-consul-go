@@ -15,7 +15,7 @@ func (p *jsiiProxy_PreparedQueryFailoverTargetsList) validateGetParameters(index
 	return nil
 }
 
-func (p *jsiiProxy_PreparedQueryFailoverTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PreparedQueryFailoverTargetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

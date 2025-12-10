@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerRingHashConfigOutputRef
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerRingHashConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerRingHashConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerRingHashConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerRingHashConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

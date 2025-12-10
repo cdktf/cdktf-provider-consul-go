@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigEntryServiceDefaultsDestinationList) validateGetParamet
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceDefaultsDestinationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceDefaultsDestinationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

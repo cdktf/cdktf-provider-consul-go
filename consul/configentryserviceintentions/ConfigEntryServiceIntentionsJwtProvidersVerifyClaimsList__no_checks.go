@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigEntryServiceIntentionsJwtProvidersVerifyClaimsList) val
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceIntentionsJwtProvidersVerifyClaimsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceIntentionsJwtProvidersVerifyClaimsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

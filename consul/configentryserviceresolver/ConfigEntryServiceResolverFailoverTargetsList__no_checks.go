@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigEntryServiceResolverFailoverTargetsList) validateGetPar
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceResolverFailoverTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceResolverFailoverTargetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerRingHashConfigList) val
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerRingHashConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerRingHashConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

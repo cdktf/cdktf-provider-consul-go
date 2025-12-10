@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigOverridesLimitsOutput
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigOverridesLimitsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigOverridesLimitsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigOverridesLimitsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigOverridesLimitsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

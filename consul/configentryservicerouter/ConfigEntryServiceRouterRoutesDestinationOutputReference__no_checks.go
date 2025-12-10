@@ -43,7 +43,7 @@ func (c *jsiiProxy_ConfigEntryServiceRouterRoutesDestinationOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceRouterRoutesDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigEntryServiceRouterRoutesDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ConfigEntryServiceRouterRoutesDestinationOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceRouterRoutesDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceRouterRoutesDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_AclAuthMethodNamespaceRuleList) validateGetParameters(index *
 	return nil
 }
 
-func (a *jsiiProxy_AclAuthMethodNamespaceRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AclAuthMethodNamespaceRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

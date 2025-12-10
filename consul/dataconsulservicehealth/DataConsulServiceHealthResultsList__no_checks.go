@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataConsulServiceHealthResultsList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataConsulServiceHealthResultsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataConsulServiceHealthResultsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

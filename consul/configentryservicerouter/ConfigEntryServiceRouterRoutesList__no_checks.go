@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigEntryServiceRouterRoutesList) validateGetParameters(ind
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceRouterRoutesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceRouterRoutesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

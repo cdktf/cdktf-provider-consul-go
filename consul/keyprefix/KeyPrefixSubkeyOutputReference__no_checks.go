@@ -43,11 +43,11 @@ func (k *jsiiProxy_KeyPrefixSubkeyOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (k *jsiiProxy_KeyPrefixSubkeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyPrefixSubkeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyPrefixSubkeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyPrefixSubkeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

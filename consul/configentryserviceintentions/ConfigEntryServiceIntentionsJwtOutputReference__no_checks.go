@@ -43,7 +43,7 @@ func (c *jsiiProxy_ConfigEntryServiceIntentionsJwtOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceIntentionsJwtOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigEntryServiceIntentionsJwtOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ConfigEntryServiceIntentionsJwtOutputReference) validatePutPr
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceIntentionsJwtOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceIntentionsJwtOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigEntryServiceIntentionsSourcesPermissionsHttpList) valid
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceIntentionsSourcesPermissionsHttpList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceIntentionsSourcesPermissionsHttpList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

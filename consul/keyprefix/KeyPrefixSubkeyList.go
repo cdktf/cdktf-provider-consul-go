@@ -41,7 +41,7 @@ type KeyPrefixSubkeyList interface {
 	Get(index *float64) KeyPrefixSubkeyOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (k *jsiiProxy_KeyPrefixSubkeyList) Get(index *float64) KeyPrefixSubkeyOutpu
 	return returns
 }
 
-func (k *jsiiProxy_KeyPrefixSubkeyList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := k.validateResolveParameters(_context); err != nil {
+func (k *jsiiProxy_KeyPrefixSubkeyList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (k *jsiiProxy_KeyPrefixSubkeyList) Resolve(_context cdktf.IResolveContext) 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

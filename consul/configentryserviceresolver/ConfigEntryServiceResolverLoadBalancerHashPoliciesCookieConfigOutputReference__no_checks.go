@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfi
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

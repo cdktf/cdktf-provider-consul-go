@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConfigEntryServiceDefaultsMeshGatewayOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceDefaultsMeshGatewayOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigEntryServiceDefaultsMeshGatewayOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceDefaultsMeshGatewayOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceDefaultsMeshGatewayOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

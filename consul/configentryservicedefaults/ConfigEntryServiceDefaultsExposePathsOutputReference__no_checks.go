@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConfigEntryServiceDefaultsExposePathsOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceDefaultsExposePathsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigEntryServiceDefaultsExposePathsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceDefaultsExposePathsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceDefaultsExposePathsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

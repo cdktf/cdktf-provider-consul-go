@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataConsulAclTokenRolesList) validateGetParameters(index *flo
 	return nil
 }
 
-func (d *jsiiProxy_DataConsulAclTokenRolesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataConsulAclTokenRolesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

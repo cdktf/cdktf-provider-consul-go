@@ -43,7 +43,7 @@ func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerHashPoliciesOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerHashPoliciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerHashPoliciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerHashPoliciesOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerHashPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerHashPoliciesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

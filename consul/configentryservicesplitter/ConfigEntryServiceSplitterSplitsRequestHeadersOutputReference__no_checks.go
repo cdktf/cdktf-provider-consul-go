@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConfigEntryServiceSplitterSplitsRequestHeadersOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceSplitterSplitsRequestHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigEntryServiceSplitterSplitsRequestHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceSplitterSplitsRequestHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceSplitterSplitsRequestHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

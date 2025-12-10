@@ -85,17 +85,17 @@ func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigDefaultsMeshGatewayOu
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigDefaultsMeshGatewayOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigDefaultsMeshGatewayOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigDefaultsMeshGatewayOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigDefaultsMeshGatewayOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

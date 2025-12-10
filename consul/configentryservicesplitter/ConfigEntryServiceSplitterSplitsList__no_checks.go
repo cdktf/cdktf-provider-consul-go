@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigEntryServiceSplitterSplitsList) validateGetParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceSplitterSplitsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceSplitterSplitsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

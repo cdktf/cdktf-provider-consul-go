@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataConsulServicesQueryOptionsList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataConsulServicesQueryOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataConsulServicesQueryOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfi
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (p *jsiiProxy_PreparedQueryFailoverTargetsOutputReference) validateGetStrin
 	return nil
 }
 
-func (p *jsiiProxy_PreparedQueryFailoverTargetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PreparedQueryFailoverTargetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PreparedQueryFailoverTargetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PreparedQueryFailoverTargetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

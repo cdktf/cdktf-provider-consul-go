@@ -43,7 +43,7 @@ func (a *jsiiProxy_AclRoleTemplatedPoliciesOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_AclRoleTemplatedPoliciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AclRoleTemplatedPoliciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AclRoleTemplatedPoliciesOutputReference) validatePutTemplateV
 	return nil
 }
 
-func (a *jsiiProxy_AclRoleTemplatedPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AclRoleTemplatedPoliciesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigDefaultsPassiveHealth
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigDefaultsPassiveHealthCheckList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigDefaultsPassiveHealthCheckList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

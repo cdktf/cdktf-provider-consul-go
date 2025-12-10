@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigDefaultsMeshGatewayLi
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigDefaultsMeshGatewayList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceDefaultsUpstreamConfigDefaultsMeshGatewayList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

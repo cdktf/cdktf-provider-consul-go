@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataConsulAclRoleTemplatedPoliciesTemplateVariablesList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataConsulAclRoleTemplatedPoliciesTemplateVariablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataConsulAclRoleTemplatedPoliciesTemplateVariablesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

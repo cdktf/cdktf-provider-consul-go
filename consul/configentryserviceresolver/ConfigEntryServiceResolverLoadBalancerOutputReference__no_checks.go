@@ -43,7 +43,7 @@ func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigEntryServiceResolverLoadBalancerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

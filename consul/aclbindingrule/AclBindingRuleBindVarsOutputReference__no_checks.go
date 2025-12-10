@@ -43,11 +43,11 @@ func (a *jsiiProxy_AclBindingRuleBindVarsOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (a *jsiiProxy_AclBindingRuleBindVarsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AclBindingRuleBindVarsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AclBindingRuleBindVarsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AclBindingRuleBindVarsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_AclAuthMethodNamespaceRuleOutputReference) validateGetStringM
 	return nil
 }
 
-func (a *jsiiProxy_AclAuthMethodNamespaceRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AclAuthMethodNamespaceRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AclAuthMethodNamespaceRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AclAuthMethodNamespaceRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

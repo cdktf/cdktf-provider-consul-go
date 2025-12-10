@@ -43,11 +43,11 @@ func (a *jsiiProxy_AclTokenServiceIdentitiesOutputReference) validateGetStringMa
 	return nil
 }
 
-func (a *jsiiProxy_AclTokenServiceIdentitiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AclTokenServiceIdentitiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AclTokenServiceIdentitiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AclTokenServiceIdentitiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
